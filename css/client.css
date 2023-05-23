@@ -30,7 +30,7 @@ html, body{
 
 
 #home{
-	background: url(images/laughingatwork2.webp) no-repeat center center fixed;
+	background-color:#e8eef1 ;
 	display: table;
 	height:100%;
 	position: relative;
@@ -51,28 +51,11 @@ html, body{
 }
 
 
-
-
-.padding{
-	padding: 80px 0;
+.dropdown-menu a{
+		color:#1e3d58;
+	
 }
 
-.padding a{
-    text-align: center;
-	background-color:#1e3d58;
-    color:#e8eef1;
-}
-
-
-
-#fixed{
-	background: url(images/wolf.jpg) no-repeat center center fixed;
-	display: table;
-	height:80%;
-	position: relative;
-	width:100%;
-	background-size: cover;
-}
 
 footer {
 	width: 100%;
