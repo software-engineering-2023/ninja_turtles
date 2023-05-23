@@ -1,0 +1,179 @@
+
+
+
+
+html, body{
+	height: 100%;
+	width:100%;
+}
+
+.navbar{
+	background-color: #1e3d58;
+	padding: 1% 0;
+	font-size: 18px;
+}
+
+.navbar-brand{
+	min-height: 55px;
+	padding: 0 15px 5px;
+}
+
+
+.navbar-default .navbar-nav li a{
+	color: #e8eef1;
+}
+
+.navbar-default .navbar-nav li a:hover, .navbar-default .navbar-nav li a:active{
+	color: #FFF;
+}
+
+
+
+
+
+
+#home{
+	background: url(images/buildings-home-2.jpg) no-repeat center center fixed;
+	display: table;
+	height:100%;
+	position: relative;
+	width: 100%;
+	background-size: cover;
+}
+
+.landing-text{
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.landing-text h1{
+	font-size: 500%;
+	font-weight: 100%;
+	color:#1e3d58
+}
+
+.landing-text h3{
+	font-weight: 100%;
+	color:#1e3d58
+}
+
+.landing-text a{
+	color:#1e3d58
+}
+
+
+.padding{
+	padding: 80px 0;
+}
+
+.padding img{
+	width: 100%;
+}
+
+
+#fixed{
+	background: url(images/bank-employee3.jpg) no-repeat center center fixed;
+	display: table;
+	height:80%;
+	position: relative;
+	width:100%;
+	background-size: cover;
+}
+
+
+footer {
+	width: 100%;
+	background-color:#1e3d58 ;
+	padding: 5% 5% 10% 5%;
+	color: #e8eef1;
+}
+
+.fa {
+	padding: 15px;
+	font-size: 25px;
+	color: #e8eef1;
+}
+
+.fa:hover {
+	color: #FFF;
+	text-decoration: none;
+}
+
+.icon{
+	max-width: 250px;
+}
+
+
+
+
+
+
+
+/*--- iOS Landing Page Fix
+section {
+ 	position: relative;
+ 	width: 100%;
+ 	height: 100%;
+ 	display: table;
+}
+.home-wrap {
+ 	clip: rect(0, auto, auto, 0);
+ 	position: absolute;
+ 	top: 0;
+ 	left: 0;
+ 	width: 100%;
+ 	height: 100%;
+}
+#home {
+	background-image: url('img/mountains.jpeg');
+ 	position: fixed;
+ 	display: table;
+ 	top: 0;
+ 	left: 0;
+ 	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-position: center center;
+	-webkit-transform: translateZ(0);
+          transform: translateZ(0);
+	will-change: transform;
+	z-index: -1;
+}
+.landing-text {
+	z-index: 100;
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+}
+--*/
+
+/*--- iOS Fixed Image Fix
+figure {
+	position: relative;
+	width: 100%;
+	height: 60%;
+}
+.fixed-wrap {
+	clip: rect(0, auto, auto, 0);
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+#fixed {
+	background-image: url('img/background.jpg');
+	position: fixed;
+	display: block;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-position: center center;
+	-webkit-transform: translateZ(0);
+          transform: translateZ(0);
+	will-change: transform;
+}
+--*/
