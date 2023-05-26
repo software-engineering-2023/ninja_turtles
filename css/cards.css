@@ -1,0 +1,77 @@
+html, body{
+	height: 100%;
+	width:100%;
+}
+
+.navbar{
+	background-color: #1e3d58;
+	padding: 1% 0;
+	font-size: 18px;
+}
+
+.navbar-brand{
+	min-height: 55px;
+	padding: 0 15px 5px;
+}
+
+
+.navbar-default .navbar-nav li a{
+	color: #e8eef1;
+}
+
+.navbar-default .navbar-nav li a:hover, .navbar-default .navbar-nav li a:active{
+	color: #FFF;
+}
+
+footer {
+	width: 100%;
+	background-color:#1e3d58 ;
+	padding: 5% 5% 10% 5%;
+	color: #e8eef1;
+}
+
+.fa {
+	padding: 15px;
+	font-size: 25px;
+	color: #e8eef1;
+}
+
+.fa:hover {
+	color: #FFF;
+	text-decoration: none;
+}
+
+.icon{
+	max-width: 250px;
+}
+
+.rectangle {
+    width: 95%;
+    height: 400px;
+    background-color: rgb(166, 166, 214);
+    transition: box-shadow 0.3s ease;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+  
+  .rectangle:hover {
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+  }
+
+
+  .rectangle.collapsed {
+    height: 200px;
+  }
+  
+  #hiddenText {
+    display: none;
+    color:#1e3d58;
+    text-align: center;
+  }
+
+  .rectangle.expanded + #hiddenText {
+    display: block; /* Display the text when the rectangle is expanded */
+  }
+  
+  
+  
