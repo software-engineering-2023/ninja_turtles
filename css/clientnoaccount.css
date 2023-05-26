@@ -41,13 +41,26 @@ html, body{
 .landing-text{
 	display: table-cell;
 	text-align: center;
-	vertical-align:-webkit-baseline-middle;
+	vertical-align:middle;
+}
+
+.landing-text h1{
+    font-size: 500%;
+	font-weight: 100%;
+	color:#1e3d58
 }
 
 .info-text{
 	text-align:left;
 	color:#1e3d58;
 
+}
+
+.info-text a{
+    
+	font-weight: 100%;
+    font-size:350%;
+    color:#1e3d58
 }
 
 
@@ -79,7 +92,4 @@ footer {
 .icon{
 	max-width: 250px;
 }
-
-
-
 

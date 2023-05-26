@@ -29,6 +29,26 @@ app.get("/login", function(req,res){
     res.sendFile(__dirname + "/login.html");
 })
 
+app.post("/login", function(req,res){
+    if (req.body.username=="client" && req.body.password=="client"){
+        res.sendFile(__dirname + "/client.html");
+    }
+
+    if (req.body.username=="admin" && req.body.password=="admin"){
+        res.sendFile(__dirname + "/admin.html");
+    }
+
+    if (req.body.username=="banker" && req.body.password=="banker"){
+        res.sendFile(__dirname + "/banker.html");
+    }
+
+    else{
+        alert("Incorrect credentials. Please register if you don't have an account.");
+    }
+})
+
+
+
 app.get("/about", function(req,res){
     res.sendFile(__dirname + "/about.html");
 })
