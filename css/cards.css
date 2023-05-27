@@ -45,29 +45,26 @@ footer {
 	max-width: 250px;
 }
 
-.rectangle {
+#rectangle {
     width: 95%;
-    height: 400px;
+    height: 200px;
     background-color: rgb(166, 166, 214);
     transition: box-shadow 0.3s ease;
     border-radius: 15px;
     cursor: pointer;
   }
   
-  .rectangle:hover {
+  #rectangle:hover {
     box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
   }
 
 
-  .rectangle.collapsed {
-    height: 200px;
-  }
-  
   #hiddenText {
     display: none;
     color:#1e3d58;
     text-align: center;
   }
+  
 
   .rectangle.expanded + #hiddenText {
     display: block; /* Display the text when the rectangle is expanded */
