@@ -1,0 +1,176 @@
+
+html, body{
+	height: 100%;
+	width:100%;
+}
+
+.navbar{
+	background-color: #1e3d58;
+	padding: 1% 0;
+	font-size: 18px;
+}
+
+.navbar-brand{
+	min-height: 55px;
+	padding: 0 15px 5px;
+}
+
+
+.navbar-default .navbar-nav li a{
+	color: #e8eef1;
+}
+
+.navbar-default .navbar-nav li a:hover, .navbar-default .navbar-nav li a:active{
+	color: #FFF;
+}
+
+h1{
+    font-size: 500%;
+    text-align: center;
+}
+
+
+.btn{
+    padding: 10px 60px;
+    background: #fff;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    font-size: 22px;
+    font-weight: 500;
+    border-radius: 30px;
+}
+
+#home{
+	background-color:#e8eef1 ;
+	display: table;
+	height:100%;
+	position: relative;
+	width: 100%;
+	background-size: cover;
+}
+
+
+.landing-text{
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+}
+.landing-text a{
+	color:#1e3d58
+    
+}
+
+.landing-text h1{
+	font-size: 500%;
+    text-align: center;
+	font-weight: 100%;
+	color:#1e3d58
+}
+.info-text{
+	text-align:left;
+	color:#1e3d58;
+
+}
+.btn-lg {
+    padding: 10px 10px;
+    font-size: 20px;
+  }
+
+
+.dropdown-menu a{
+		color:#1e3d58;
+	
+}
+
+.btn-col {
+    margin-right: -5px;
+    margin-left: -5px;
+  }
+.equal-button {
+    width: 100%;
+ }
+ .form-control {
+    font-size: 16px;
+}
+
+
+
+#account-type {
+    height: 40px;
+}
+.form-group label {
+    font-size: 18px;
+}
+footer {
+	width: 100%;
+	background-color:#1e3d58 ;
+	padding: 5% 5% 10% 5%;
+	color: #e8eef1;
+}
+
+.fa {
+	padding: 15px;
+	font-size: 25px;
+	color: #e8eef1;
+}
+
+.fa:hover {
+	color: #FFF;
+	text-decoration: none;
+}
+
+.icon{
+	max-width: 250px;
+}
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .popup {
+    width: 400px;
+    background-color: #fff;
+    padding:0 30px 30px;
+    border-radius: 6px;
+    transform: translate(-50%,-50%) scale(0.1);
+    text-align: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s; 
+    border: 2px solid #ccc;
+  }
+  .open-popup{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%,-50%) scale(1);
+  }
+  .popup h3 {
+    margin-top: 0;
+
+  }
+  .popup h2 {
+    font-size: 20px;
+    margin-top: 0;
+  }
+  .popup button {
+    width: 100%;
+    margin-top: 10px;
+    font-size: 15px;
+    border-radius: 4px;
+    cursor:pointer;
+  }
+  
+
+
+

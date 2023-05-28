@@ -16,7 +16,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-  <link href="./css/clientbankacc.css" rel="stylesheet" />
+  <link href="./css/open.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -92,33 +92,85 @@
 
 
 
-<div id="home">
-    <div class="landing-text">
-      <h1>Bank Account</h1>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <div class="row">
-        <div class="col-sm-6">
-          <a href="openaccount" class="btn btn-default btn-lg">Open Bank Account</a>
+
+
+<div class="container">
+    <form class="form-signup">
+        <h1>Close Bank Account</h1>
+        <br>
+        <br>
+        <br>
+        <div class="form-group">
+            
+            <div class="col-md-6">
+                <input type="text" class="form-control" name="accountno" placeholder="Account number"> 
+
+            </div>
+           
         </div>
-        <div class="col-sm-6">
-          <a href="closeaccount" class="btn btn-default btn-lg">Close Bank Account</a>
+        
+
+        <br>
+        <br>
+        <br>
+        
+        <br>
+        <br>
+        <br>
+        <div class="form-group">
+            <label for="account-type">Account Type</label>
+            <br>
+            <br>
+            <select class="form-control" id="account-type" name="accountType">
+                <option value="savings">Savings Account</option>
+                <option value="checking">Checking Account</option>
+                <option value="credit">Credit Card Account</option>
+                <option value="business">Business Account</option>
+                <option value="student">Student Account</option>
+            </select>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-6">
-          <a href="banktrans" class="btn btn-default btn-lg">View Bank Account Transactions</a>
+        <br>
+        <br>
+        <br>
+
+        <div class="form-group">
+            <label>
+                <input type="checkbox" name="">
+                I accept the <a href="#">Terms of Use</a> & <a href="#">Privacy Policy</a>
+            </label>
         </div>
-        <div class="col-sm-6">
-          <a href="transfer" class="btn btn-default btn-lg">Transfer to other bank account</a>
-        </div>
-      </div>
-    </div>
-  </div>
+        <br>
+        <br>
+        <br>
+       <button type="submit" class="btn" onclick="openPopup()">Submit</button>
+       <div class="popup" id="popup">
+        <h2>Request to delete account sent successfully!</h2>
+        <p>Your account is successfully being deleted.</p>
+        <button type="button" onclick="closePopup()">Close</button> 
+       </div>
+        <br>
+        <br>
+        <br>
+        <script>
+        let popup = document.getElementById("popup");
+        function openPopup(){
+            event.preventDefault();
+            popup.classList.add("open-popup");
+        }
+        function closePopup(){
+            popup.classList.remove("open-popup");
+        }
+        </script>
+    </form>
+</div>
+
+
+
+  
+
+
+
+
 
 <footer class="container-fluid text-center">
     <div class="row">

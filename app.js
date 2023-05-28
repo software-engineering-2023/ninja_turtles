@@ -82,11 +82,32 @@ app.get("/client", function(req,res){
     res.sendFile(__dirname + "/client.html");
 })
 
+app.get("/bankaccount", function(req,res){
+    res.sendFile(__dirname + "/bankaccount.html");
+})
+
+app.get("/openaccount", function(req,res){
+    res.sendFile(__dirname + "/openaccount.html");
+})
+app.get("/closeaccount", function(req,res){
+    res.sendFile(__dirname + "/closeaccount.html");
+})
+app.get("/banktrans", function(req,res){
+    res.sendFile(__dirname + "/banktrans.html");
+})
 
 
 
-
-
+$ = function(id) {
+    return document.getElementById(id);
+  }
+  
+  var show = function(id) {
+      $(id).style.display ='block';
+  }
+  var hide = function(id) {
+      $(id).style.display ='none';
+  }
 
 
 
