@@ -1,8 +1,13 @@
 
+
+
+
+
+
 html, body{
 	height: 100%;
 	width:100%;
-	background-color: #e8eef1;
+    background-color: #e8eef1;
 }
 
 .navbar{
@@ -13,7 +18,7 @@ html, body{
 
 .navbar-brand{
 	min-height: 55px;
-	padding: 0 15px 5px;
+	padding:  0 15px 5px;
 }
 
 
@@ -32,21 +37,56 @@ html, body{
 
 #home{
 	background-color:#e8eef1 ;
+    text-align: center;
 	display: table;
 	height:100%;
 	position: relative;
-	width: 100%;
+	width:100%;
 	background-size: cover;
 }
 
 .landing-text{
-	display: table-cell;
+    position: relative;
+
+	display: table;
 	text-align: center;
-	vertical-align:-webkit-baseline-middle;
+    vertical-align:middle;
+	
+}
+
+
+
+
+.btn{
+    padding: 10px 60px;
+    background: #fff;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    font-size: 22px;
+    font-weight: 500;
+    border-radius: 30px;
+    text-align:center;
+}
+
+
+.form-control {
+    font-size: 16px;
+}
+
+
+.landing-text h1{
+    text-align:center;
+	font-size: 300%;
+	font-weight: 100%;
+	color:#1e3d58
 }
 
 .info-text{
-	text-align:left;
+
+	font-size: 350%;
+	font-weight: 80%;
+	text-align:center;
 	color:#1e3d58;
 
 }
@@ -57,6 +97,9 @@ html, body{
 		color:#1e3d58;
 	
 }
+
+
+
 
 
 footer {
@@ -80,7 +123,3 @@ footer {
 .icon{
 	max-width: 250px;
 }
-
-
-
-
