@@ -177,11 +177,7 @@ footer {
   }
 
 
-  .open-popup5{
-    visibility: visible;
-    top: 50%;
-    transform: translate(-50%,-50%) scale(1);
-  }
+
 
 
   .hide-col1{
@@ -197,10 +193,7 @@ footer {
   .hide-col4{
     visibility: hidden;
   }
-  .hide-col5{
-    visibility: hidden;
-  }
-
+  
 
 
   .popup h3 {
