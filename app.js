@@ -53,18 +53,23 @@ app.post("/login", function(req,res){
         res.sendFile(__dirname + "/client.html");
     }
     else{
-        if(req.body.username=="admin" && req.body.password=="admin"){
-            res.sendFile(__dirname + "/admin.html");
+        if(req.body.username=="clientnoaccount" && req.body.password=="lientnoaccount"){
+            res.sendFile(__dirname + "/clientnoaccount.html");
         }
         else{
-            if(req.body.username=="banker" && req.body.password=="banker"){
-                res.sendFile(__dirname + "/banker.html");
+            if(req.body.username=="admin" && req.body.password=="admin"){
+                res.sendFile(__dirname + "/admin.html");
             }
             else{
                 alert("Incorrect credentials. Please register if you don't have an account.");
             }
 
         }
+        
+        
+           
+           
+        
 
     }
 
