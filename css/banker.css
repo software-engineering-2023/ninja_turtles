@@ -17,7 +17,7 @@ html, body{
 
 .navbar-brand{
 	min-height: 55px;
-	padding: 0 15px 5px;
+	padding:  0 15px 5px;
 }
 
 
@@ -44,6 +44,8 @@ html, body{
 }
 
 .landing-text{
+
+
 	display: table-cell;
 	text-align: center;
 	vertical-align:-webkit-baseline-middle;

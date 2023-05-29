@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>NTCB LTD.</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/
+  font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <link href="./css/loanappbanker.css" rel="stylesheet" />
+</head>
+</html>
+
+<body>
+
+
+    <nav class="navbar navbar-expand-md navbar-fixed-top" role="navigation">
+        <a class="navbar-brand" href="#"><img src='./css/images/logo.jpg' width="110px" length="30px">
+        </a>
+    
+        <button class="navbar-toggler" type="button" data-toggle="collapse" 
+        data-target="#navbarSupportedContent">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href='#' id="navbarDropdown" 
+                role="button" data-toggle="dropdown" style="color:#e8eef1;">Help</a>
+    
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="technicalsupport">Technical Support</a>
+    
+    
+                </div>
+            </li>
+            
+        </ul>
+    
+    
+     
+
+        <ul class="navbar-nav md-auto">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href='#' id="navbarDropdown" 
+                role="button" data-toggle="dropdown" style="color:#e8eef1;"><img src="./css/images/bell.png" width="20px" height="20px" ></a>
+    
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">RE: Issue with viewing clients' info</a>
+               
+            </li>
+            
+        </ul>
+
+
+    </div>
+    
+    </nav>
+
+    <br>
+
+<br>
+<h1 style="color:#1e3d58">Loan Applications</h1>
+
+<br>
+
+
+
+    <table>
+        <thead>
+          <tr>
+            <th>Application Number</th>
+            <th>Type</th>
+            <th>View</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>#998626353</td>
+            <td>Regular Loan</td>
+            <td><button type="button" onclick="openPopup1()"  style='color: #1e3d58'>View</button></td>
+           
+          </tr>
+          <tr>
+            <td>#222273635</td>
+            <td>Regular Loan</td>
+            <td><button type="button" onclick="openPopup2()"  style='color: #1e3d58'>View</button></td>
+          </tr>
+          <tr>
+            <td>#398446738</td>
+            <td>Regular Loan</td>
+            <td><button type="button" onclick="openPopup3()"  style='color: #1e3d58'>View</button></td>
+          </tr>
+
+          <tr>
+            <td>#19384656</td>
+            <td>Car Loan</td>
+            <td><button type="button" onclick="openPopup4()"  style='color: #1e3d58'>View</button></td>
+          </tr>
+
+
+          <tr>
+            <td>#2373994846</td>
+            <td>Car Loan</td>
+            <td><button type="button" onclick="openPopup5()"  style='color: #1e3d58'>View</button></td>
+          </tr>
+    
+        </tbody>
+    </table>
+
+    <div class="popup" id="popup1">
+        <h2>Application Information</h2>
+        <br>
+
+        <h3>Full Name: Monika Sameer</h3>
+        <h3>DOB: 23/02/2002</h3>
+        <h3>SSN: 1928373655</h3>
+        <h3>Job Title: CEO of all the companies</h3>
+        <h3>Monthly Income: $1938373626</h3>
+        <h3>Financial Obligations: $9,000 (Monthly Rent)</h3>
+        <h3>Loan Amount: $65</h3>
+        <h3>Loan Purpose: Iced Matcha Latte</h3>
+        <button type="button" onclick="closePopup1()" style="color: #1e3d58">Accept</button> 
+            <button type="button" onclick="closePopup1()" style="color: #1e3d58">Deny</button>
+       </div>
+        <br>
+        <br>
+        <br>
+        <script>
+        let popup1 = document.getElementById("popup1");
+        function openPopup1(){
+            event.preventDefault();
+            popup1.classList.add("open-popup1");
+        }
+        function closePopup1(){
+            popup1.classList.remove("open-popup1");
+        }
+        </script>
+        </div>
+
+        <div class="popup" id="popup2">
+
+            <h2>Application Information</h2>
+        <br>
+
+        <h3>Full Name: Emily Johnson</h3>
+        <h3>DOB: 10/02/1990</h3>
+        <h3>SSN: 293763646</h3>
+        <h3>Job Title: Marketing Manager</h3>
+        <h3>Monthly Income: $3,200</h3>
+        <h3>Financial Obligations: $800 (Student Loan), $400 (Credit Card)</h3>
+        <h3>Loan Amount: $6677</h3>
+        <h3>Loan Purpose: Vacation expenses</h3>
+            <button type="button" onclick="closePopup2()" style="color: #1e3d58">Accept</button> 
+            <button type="button" onclick="closePopup2()" style="color: #1e3d58">Deny</button> 
+           </div>
+            <br>
+            <br>
+            <br>
+            <script>
+            let popup2 = document.getElementById("popup2");
+            function openPopup2(){
+                event.preventDefault();
+                popup2.classList.add("open-popup2");
+            }
+            function closePopup2(){
+                popup2.classList.remove("open-popup2");
+            }
+            </script>
+            </div>
+
+            <div class="popup" id="popup3">
+                
+            <h2>Application Information</h2>
+            <br>
+    
+            <h3>Full Name: Franz Kafka</h3>
+            <h3>DOB: 03/07/1883</h3>
+            <h3>SSN: 297236552</h3>
+            <h3>Job Title: Author</h3>
+            <h3>Monthly Income: $878</h3>
+            <h3>Financial Obligations: $200 (Monthly Rent), $9000 (Car Loan)</h3>
+            <h3>Loan Amount: $78373</h3>
+            <h3>Loan Purpose: Debt Consolidation</h3>
+                <button type="button" onclick="closePopup3()" style="color: #1e3d58">Accept</button> 
+                <button type="button" onclick="closePopup3()" style="color: #1e3d58">Deny</button> 
+               </div>
+                <br>
+                <br>
+                <br>
+                <script>
+                let popup3 = document.getElementById("popup3");
+                function openPopup3(){
+                    event.preventDefault();
+                    popup3.classList.add("open-popup3");
+                }
+                function closePopup3(){
+                    popup3.classList.remove("open-popup3");
+                }
+                </script>
+                </div>
+
+             <div class="popup" id="popup4">
+                
+             <h2>Application Information</h2>
+             <br>
+            
+            <h3>Full Name: Franz Kafka</h3>
+            <h3>DOB: 03/07/1883</h3>
+                
+            <h3>SSN: 297236552</h3>
+            <h3>Job Title: Author</h3>
+            <h3>Monthly Income: $878</h3>
+             <h3>Financial Obligations: $200 (Monthly Rent), $9000 (Car Loan)</h3>
+             <h3>Loan Amount: $78373</h3>
+             <h3>Loan Purpose: Debt Consolidation</h3>
+                 <button type="button" onclick="closePopup4()" style="color: #1e3d58">Accept</button> 
+                 <button type="button" onclick="closePopup4()" style="color: #1e3d58">Deny</button> 
+                </div>
+                  <br>
+                 <br>
+                  <br>
+               <script>
+               let popup4 = document.getElementById("popup4");
+             function openPopup4(){
+                   event.preventDefault();
+                popup4.classList.add("open-popup4");
+               }
+             function closePopup4(){
+                popup4.classList.remove("open-popup4");
+                 }
+             </script>
+             </div>
+
+                        
+          <div class="popup" id="popup5">
+                
+         <h2>Application Information</h2>
+         <br>
+                    
+        <h3>Full Name: Franz Kafka</h3>
+        <h3>DOB: 03/07/1883</h3>
+        <h3>SSN: 297236552</h3>
+         <h3>Job Title: Author</h3>
+          <h3>Monthly Income: $878</h3>
+         <h3>Financial Obligations: $200 (Monthly Rent), $9000 (Car Loan)</h3>
+         <h3>Loan Amount: $78373</h3>
+         <h3>Loan Purpose: Debt Consolidation</h3>
+              <button type="button" onclick="closePopup5()" style="color: #1e3d58">Accept</button> 
+          <button type="button" onclick="closePopup5()" style="color: #1e3d58">Deny</button> 
+              </div>
+               <br>
+              <br>
+         <br>
+             <script>
+            let popup5 = document.getElementById("popup5");
+             function openPopup5(){
+             event.preventDefault();
+              popup5.classList.add("open-popup5");
+              }
+              function closePopup5(){
+           popup5.classList.remove("open-popup5");
+             }
+            </script>
+     </div>
+                
+
+
+<br>
+
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+
+
+
+
+
+
+    <footer class="container-fluid text-center">
+        <div class="row">
+            <div class="col-sm-4">
+                <h3>Contact Us</h3>
+                <br>
+                <h4>+201120044602</h4>
+                <h4>XCPQ+HGQ, C Building, El-Obour Square, New Cairo 3</h4>
+    
+            </div>
+            <div class="col-sm-4">
+                <h3>Connect</h3>
+                <a href="https://google.com" class="fa fa-google"><img src='./css/images/google.png' width="25px" height="25px"></a>
+                <a href="https://linkedin.com" class="fa fa-linkedin"><img src='./css/images/linkedin.png' width="25px" height="25px"></a>
+            </div>
+    
+            <div class="col-sm-4">
+                <img src="./css/images/logo.jpg" class="icon">
+            </div>
+        </div>
+    </footer>
+
+
+</body>
