@@ -16,9 +16,10 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-  <link href="./css/banker.css" rel="stylesheet" />
+  <link href="./css/announcement.css" rel="stylesheet" />
 </head>
 
+</html>
 
 
 <body>
@@ -66,79 +67,83 @@
     </div>
     
     </nav>
+<br>
+<br>
 
-   <div id="home">
-   
-        <div class="landing-text">
-            <h1>Welcome</h1>
-    
+    <div class="container">
+        <form class="form-signup">
+            <h1 style="color:#1e3d58">Broadcast Announcement</h1>
             <br>
             <br>
+            <br>
+            <div class="form-group">
+                <div class="row">
+         
+                    <input type="text" class="form-control" name="announcement" placeholder="Announcement Subject"> 
     
-            <div class="info-text">
-                <a class="dropdown-item" href="accountapplication">Bank Account Applications</a>
-
-               
+            
+            </div>
             </div>
     
+            
             <br>
             <br>
-    
-            <div class="info-text">
-                <a class="dropdown-item" href="cardapplication">Card Applications</a>
-            </div>
-    
+           <button type="submit" class="btn" onclick="openPopup()" style="color:#1e3d58;">Send</button>
+           <div class="popup" id="popup">
+            <h2>Announcement sent successfully</h2>
+            <button type="button" onclick="closePopup()">Close</button> 
+           </div>
             <br>
             <br>
-
-            <div class="info-text">
-                <a class="dropdown-item" href="technicalsupportbanker">Loan Applications</a>
-            </div>
             <br>
-            <br>
-
-            <div class="info-text">
-                <a class="dropdown-item" href="technicalsupportbanker">Reports</a>
-            </div>
-
-            <br>
-            <br>
-
-            <div class="info-text">
-                <a class="dropdown-item" href="announcement">Broadcast Announcement</a>
-            </div>
-
-
-        </div>
-    
-        
+            <script>
+            let popup = document.getElementById("popup");
+            function openPopup(){
+                event.preventDefault();
+                popup.classList.add("open-popup");
+            }
+            function closePopup(){
+                popup.classList.remove("open-popup");
+            }
+            </script>
+        </form>
     </div>
+    
+    
+    
+
+<br>
+<br>
+<br>
+<br>
 
 
 
 
-<footer class="container-fluid text-center">
-    <div class="row">
-        <div class="col-sm-4">
-            <h3>Contact Us</h3>
-            <br>
-            <h4>+201120044602</h4>
-            <h4>XCPQ+HGQ, C Building, El-Obour Square, New Cairo 3</h4>
 
+
+
+    <footer class="container-fluid text-center">
+        <div class="row">
+            <div class="col-sm-4">
+                <h3>Contact Us</h3>
+                <br>
+                <h4>+201120044602</h4>
+                <h4>XCPQ+HGQ, C Building, El-Obour Square, New Cairo 3</h4>
+    
+            </div>
+            <div class="col-sm-4">
+                <h3>Connect</h3>
+                <a href="https://google.com" class="fa fa-google"><img src='./css/images/google.png' width="25px" height="25px"></a>
+                <a href="https://linkedin.com" class="fa fa-linkedin"><img src='./css/images/linkedin.png' width="25px" height="25px"></a>
+            </div>
+    
+            <div class="col-sm-4">
+                <img src="./css/images/logo.jpg" class="icon">
+            </div>
         </div>
-        <div class="col-sm-4">
-            <h3>Connect</h3>
-            <a href="https://google.com" class="fa fa-google"><img src='./css/images/google.png' width="25px" height="25px"></a>
-            <a href="https://linkedin.com" class="fa fa-linkedin"><img src='./css/images/linkedin.png' width="25px" height="25px"></a>
-        </div>
+    </footer>
 
-        <div class="col-sm-4">
-            <img src="./css/images/logo.jpg" class="icon">
-        </div>
-    </div>
-</footer>
 
 
 </body>
-
-</html>
