@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+    
+      
+  <!-- Add some CSS to style the table -->
+  <style>
+    table {
+      width: 80%;
+      margin: auto;
+      border: 1px solid black;
+    }
+    th, td {
+      padding: 10px;
+      font-size: 18px;
+      text-align: center;
+    }
+    caption {
+      font-weight: bold;
+      font-size: 20px;
+    }
+    footer {
+      text-align: center;
+      padding: 3px;
+      background-color: DarkSalmon;
+      color: white;
+    }
+    header {
+      text-align: center;
+      padding: 3px;
+      background-color: LightBlue;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <!-- Use the header tag to define a header section -->
+  <header>
+    <head>
+        <title>NTCB LTD.</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/
+        font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link href="./css/home.css" rel="stylesheet" type="text/css"/>
+      </head>
+      
+      <body>
+      
+          <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+              <div class="container-fluid">
+                  <div class="navbar-header">
+                      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-main">
+                          <span class="sr-only">Toggle navigation</span>
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                      </button>
+                      <a class="navbar-brand" href="#"><img src='./css/images/logo.jpg' width="110px" length="25px">
+                      </a>
+                  </div>
+                  <div class="collapse navbar-collapse" id="navbar-collapse-main">
+                      <ul class="nav navbar-nav navbar-right">
+                          <li><a class="active" href="#">Home</a></li>
+                          <li><a href="about">About Us</a></li>
+                          <li><a href="services">Services</a></li>
+                      </ul>
+                  </div>
+              </div>
+          </nav>
+      </button>
+      </div>
+  </header>
+  <div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <h1></br> </h1>
+            <h2> </br> </h2>
+        </div>
+    </div>
+  </div>
+  <!-- Use the caption tag to add a title for the table -->
+  
+  
+  <table border="1">
+   <caption>Your bills</caption>
+   <tr>
+   <th>Bills</th>
+   <th>Amount</th>
+   <th>Due date</th>
+   <th>Pay now</th>
+   </tr>
+   <tr>
+   <td>Gas</td>
+   <!-- Add an id attribute to each table cell that contains the amount and the price -->
+   <td id="amount1">700 EGP</td>
+   <td>June 10</td>
+   <!-- Add an onclick attribute to each pay button, and assign it a function name that will handle the payment logic -->
+   <td><input type="number" min="0" max="700" value="0"> <button onclick="pay(1)">Pay</button></td>
+   </tr>
+   <tr>
+   <td>Water</td>
+   <!-- Add an id attribute to each table cell that contains the amount and the price -->
+   <td id="amount2">350 EGP</td>
+   <td>June 15</td>
+   <!-- Add an onclick attribute to each pay button, and assign it a function name that will handle the payment logic -->
+   <td><input type="number" min="0" max="350" value="0"> <button onclick="pay(2)">Pay</button></td>
+   </tr>
+   <tr>
+   <td>Electricity</td>
+   <!-- Add an id attribute to each table cell that contains the amount and the price -->
+   <td id="amount3">900 EGP</td>
+   <td>June 30</td>
+   <!-- Add an onclick attribute to each pay button, and assign it a function name that will handle the payment logic -->
+   <td><input type="number" min="0" max="900" value="0"> <button onclick="pay(3)">Pay</button></td>
+   </tr>
+   <tr>
+   <td>Telephone</td>
+   <!-- Add an id attribute to each table cell that contains the amount and the price -->
+   <td id="amount4">300 EGP</td>
+   <td>June 30</td>
+   <!-- Add an onclick attribute to each pay button, and assign it a function name that will handle the payment logic -->
+   <td><input type="number" min="0" max="300" value="0"> <button onclick="pay(4)">Pay</button></td>
+   </tr>
+   </table>
+   
+   <!-- <script type="text/javascript">
+    // Define a function that takes a row number as a parameter
+    function pay(row) {
+      // Get the input value from the corresponding table cell
+      var amount = document.getElementById("Pay now" + row).value;
+      // Get the price value from the corresponding table cell
+      var price = document.getElementById("Amount" + row).innerHTML;
+      // Subtract the input value from the price value
+      var newPrice = price - amount;
+      // Update the price value in the table cell
+      document.getElementById("Amount" + row).innerHTML = newPrice;
+      // Get the balance value from the paragraph tag
+      var balance = document.getElementById("balance").innerHTML;
+      // Remove the dollar sign and convert the balance to a number
+      balance = Number(balance.replace("EGP", ""));
+      // Subtract the input value from the balance value
+      var newBalance = balance - amount;
+      // Update the balance value in the paragraph tag with a dollar sign
+      document.getElementById("balance").innerHTML =newBalance + "EGP";
+    }
+  </script> -->
+  
+
+  <div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <h1></br> </h1>
+            <h2> </br> </h2>
+        </div>
+    </div>
+  </div>
+
+  <div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <p style="font-size: x-large; color: #295c8b; background-color: rgb(235, 235, 235) ; text-align: center;">Your Balance: 5000 EGP</p>
+            
+        </div>
+    </div>
+  </div>
+
+
+  <!-- Use the footer tag to define a footer section -->
+  <footer class="container-fluid text-center">
+    <div class="row">
+      <div class="col-sm-4">
+        <h3>Contact Us</h3><br />
+        <h4>+201120044602</h4><br />
+        XCPQ+HGQ, C Building, El-Obour Square, New Cairo
+        </div>
+        <div class="col-sm-4">
+            <h3>Connect</h3>
+            <a href="https://google.com" class="fa fa-google"><img src='./css/images/google.png' width="25px" height="25px"></a>
+            <a href="https://linkedin.com" class="fa fa-linkedin"><img src='./css/images/linkedin.png' width="25px" height="25px"></a>
+        </div>
+
+        <div class="col-sm-4">
+            <img src="./css/images/logo.jpg" class="icon">
+        </div>
+        <!-- Add some icons for social media -->
+        <!-- Use the fa class for font awesome icons -->
+        <!-- Use the fa-google and fa-linkedin classes for specific icons -->
+        <!-- Use the href attribute to link to the social media pages -->
+        <!-- Use the img tag to display the images -->
+        <!-- Use the width and height attributes to resize the images -->
+
+        <!-- Example:
+          <a href="#" class="fa fa-facebook"><img src="./images/facebook.png" width="25px" height="25px"></a>
+
+          This will create a link with a Facebook icon using an image
+        -->
+
+        <!-- Your code here -->
+        <!-- Add icons for Google and LinkedIn -->
+
+        <!-- Start of your code -->
+
+        <!-- End of your code -->
+
+        </div>
+
+        </div>
+
+        </footer>
+
+        </body>
+
+        </html>
+
