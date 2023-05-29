@@ -4,6 +4,41 @@
       
   <!-- Add some CSS to style the table -->
   <style>
+     .popup {
+    width: 400px;
+    background-color: #fff;
+    padding:0 30px 30px;
+    border-radius: 6px;
+    transform: translate(-50%,-50%) scale(0.1);
+    text-align: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s; 
+    border: 2px solid #ccc;
+  }
+  .open-popup{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%,-50%) scale(1);
+  }
+  .popup h3 {
+    margin-top: 0;
+
+  }
+  .popup h2 {
+    font-size: 20px;
+    margin-top: 0;
+  }
+  .popup button {
+    width: 100%;
+    margin-top: 10px;
+    font-size: 15px;
+    border-radius: 4px;
+    cursor:pointer;
+  }
     table {
       width: 80%;
       margin: auto;
@@ -97,7 +132,7 @@
    <td id="amount1">700 EGP</td>
    <td>June 10</td>
    <!-- Add an onclick attribute to each pay button, and assign it a function name that will handle the payment logic -->
-   <td><input type="number" min="0" max="700" value="0"> <button onclick="pay(1)">Pay</button></td>
+   <td><input type="number" min="0" max="700" value="0"> <button onclick="openPopup()">Pay</button></td>
    </tr>
    <tr>
    <td>Water</td>
@@ -105,7 +140,7 @@
    <td id="amount2">350 EGP</td>
    <td>June 15</td>
    <!-- Add an onclick attribute to each pay button, and assign it a function name that will handle the payment logic -->
-   <td><input type="number" min="0" max="350" value="0"> <button onclick="pay(2)">Pay</button></td>
+   <td><input type="number" min="0" max="350" value="0"> <button onclick="openPopup()">Pay</button></td>
    </tr>
    <tr>
    <td>Electricity</td>
@@ -113,7 +148,7 @@
    <td id="amount3">900 EGP</td>
    <td>June 30</td>
    <!-- Add an onclick attribute to each pay button, and assign it a function name that will handle the payment logic -->
-   <td><input type="number" min="0" max="900" value="0"> <button onclick="pay(3)">Pay</button></td>
+   <td><input type="number" min="0" max="900" value="0"> <button onclick="openPopup()">Pay</button></td>
    </tr>
    <tr>
    <td>Telephone</td>
@@ -121,10 +156,34 @@
    <td id="amount4">300 EGP</td>
    <td>June 30</td>
    <!-- Add an onclick attribute to each pay button, and assign it a function name that will handle the payment logic -->
-   <td><input type="number" min="0" max="300" value="0"> <button onclick="pay(4)">Pay</button></td>
+   <td><input type="number" min="0" max="300" value="0"> <button onclick="openPopup()">Pay</button></td>
    </tr>
    </table>
    
+   <br>
+   <br>
+   <br>
+
+   
+   <div class="popup" id="popup">
+    <h2>The ammount is paid successfully!!</h2>
+    <!-- <p>You'll be receiving a notification soon if account creation approved.</p> -->
+    <button type="button" onclick="closePopup()">Close</button> 
+   </div>
+    <br>
+    <br>
+    <br>
+    <script>
+    let popup = document.getElementById("popup");
+    function openPopup(){
+        event.preventDefault();
+        popup.classList.add("open-popup");
+    }
+    function closePopup(){
+        popup.classList.remove("open-popup");
+    }
+    </script>
+
    <!-- <script type="text/javascript">
     // Define a function that takes a row number as a parameter
     function pay(row) {
