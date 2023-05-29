@@ -1,12 +1,9 @@
 
 
-
-
-
-
 html, body{
 	height: 100%;
 	width:100%;
+    background-color: #e8eef1;
 }
 
 .navbar{
@@ -45,15 +42,26 @@ html, body{
 
 .landing-text{
 
-
+    background-color:#e8eef1 ;
+	height:100%;
+	width: 100%;
+	background-size: cover;
 	display: table-cell;
 	text-align: center;
 	vertical-align:-webkit-baseline-middle;
 }
 
 .landing-text h1{
-	font-size: 500%;
+	font-size: 700%;
 	font-weight: 100%;
+    text-align: center;
+	color:#1e3d58
+}
+
+.landing-text a{
+	
+	font-weight: 80%;
+    text-align: center;
 	color:#1e3d58
 }
 

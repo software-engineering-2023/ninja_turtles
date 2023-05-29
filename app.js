@@ -38,6 +38,14 @@ app.get("/login", function(req,res){
     res.sendFile(__dirname + "/login.html");
 })
 
+app.get("/cards", function(req,res){
+    res.sendFile(__dirname + "/cards.html");
+})
+
+app.get("/reminders", function(req,res){
+    res.sendFile(__dirname + "/reminders.html");
+})
+
 app.post("/login", function(req,res){
 
 

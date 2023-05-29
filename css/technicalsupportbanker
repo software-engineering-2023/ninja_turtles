@@ -23,6 +23,8 @@ html, body{
 	color: #FFF;
 }
 
+
+
 h1{
     font-size: 500%;
     text-align: center;
@@ -95,39 +97,13 @@ h1{
 
 
 
-
-.popup {
-    color: #1e3d58;
-}
-
-
 #account-type {
     height: 40px;
 }
 .form-group label {
     font-size: 18px;
 }
-footer {
-	width: 100%;
-	background-color:#1e3d58 ;
-	padding: 5% 5% 10% 5%;
-	color: #e8eef1;
-}
 
-.fa {
-	padding: 15px;
-	font-size: 25px;
-	color: #e8eef1;
-}
-
-.fa:hover {
-	color: #FFF;
-	text-decoration: none;
-}
-
-.icon{
-	max-width: 250px;
-}
 .overlay {
     position: fixed;
     top: 0;
@@ -155,61 +131,16 @@ footer {
     transition: transform 0.4s, top 0.4s; 
     border: 2px solid #ccc;
   }
-  .open-popup1{
+  .open-popup{
     visibility: visible;
     top: 50%;
     transform: translate(-50%,-50%) scale(1);
   }
-  .open-popup2{
-    visibility: visible;
-    top: 50%;
-    transform: translate(-50%,-50%) scale(1);
-  }
-  .open-popup3{
-    visibility: visible;
-    top: 50%;
-    transform: translate(-50%,-50%) scale(1);
-  }
-  .open-popup4{
-    visibility: visible;
-    top: 50%;
-    transform: translate(-50%,-50%) scale(1);
-  }
-
-
-  .open-popup5{
-    visibility: visible;
-    top: 50%;
-    transform: translate(-50%,-50%) scale(1);
-  }
-
-
-  .hide-col1{
-    visibility: hidden;
-  }
-  .hide-col2{
-    visibility: hidden;
-  }
-
-  .hide-col3{
-    visibility: hidden;
-  }
-  .hide-col4{
-    visibility: hidden;
-  }
-  .hide-col5{
-    visibility: hidden;
-  }
-
-
-
   .popup h3 {
-   color: #1e3d58 ;
     margin-top: 0;
 
   }
   .popup h2 {
-    color: #1e3d58 ;
     font-size: 20px;
     margin-top: 0;
   }
@@ -220,39 +151,28 @@ footer {
     border-radius: 4px;
     cursor:pointer;
   }
-  
 
 
-  table {
-    
-    background-color: #1E3D58;
-    width: 80%;
-    margin: 0 auto; 
-    
-    border: 1px solid #E8EEF1;
-  }
-  
-  th, td {
-    padding: 12px;
-    text-align: left;
-    border-bottom: 1px solid #ddd;
-    border-right: 1px solid #E8EEF1;
-    
-  }
-  
-  th {
-    border-top: 1px solid #E8EEF1;
-    background-color: #e8eef1;
-    font-weight: bold;
-    font-size: 19px;
-  }
-  
-  td {
-    color: #e8eef1;
-    font-size: 17px;
-  }
-  td:last-child, th:last-child {
-    border-right: none; 
-  }
 
 
+footer {
+	width: 100%;
+	background-color:#1e3d58 ;
+	padding: 5% 5% 10% 5%;
+	color: #e8eef1;
+}
+
+.fa {
+	padding: 15px;
+	font-size: 25px;
+	color: #e8eef1;
+}
+
+.fa:hover {
+	color: #FFF;
+	text-decoration: none;
+}
+
+.icon{
+	max-width: 250px;
+}
