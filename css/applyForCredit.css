@@ -1,0 +1,118 @@
+html, body{
+	height: 100%;
+	width:100%;
+}
+
+
+.navbar{
+	background-color: #1e3d58;
+	padding: 1% 0;
+	font-size: 18px;
+    height: 100px;
+}
+
+.navbar-brand{
+	min-height: 55px;
+	padding: 0 15px 5px;
+}
+
+
+.navbar-default .navbar-nav li a{
+	color: #e8eef1;
+}
+
+.navbar-default .navbar-nav li a:hover, .navbar-default .navbar-nav li a:active{
+	color: #FFF;
+}
+
+footer {
+	width: 100%;
+	background-color:#1e3d58 ;
+	padding: 5% 5% 10% 5%;
+	color: #e8eef1;
+}
+
+.fa {
+	padding: 15px;
+	font-size: 25px;
+	color: #e8eef1;
+}
+
+.fa:hover {
+	color: #FFF;
+	text-decoration: none;
+}
+
+.icon{
+	max-width: 250px;
+}
+
+/* Custom CSS styles */
+.form-control {
+border-radius: 0; /* Remove the default border-radius */
+transition: border-color 0.3s ease; /* Add a smooth transition effect */
+border-radius: 4px;
+height: 40px;
+}
+
+.form-control:hover {
+border-color: #007bff; /* Change the border color on hover */
+}
+
+.form-control:focus {
+box-shadow: none; /* Remove the outline on focus */
+border-color: #007bff; /* Change the border color on focus */
+}
+
+.form-group label {
+font-weight: bold; /* Make the labels bold */
+font-size: medium;
+}
+
+.btn-primary {
+background-color: #007bff; /* Change the background color of the submit button */
+border-color: #007bff; /* Change the border color of the submit button */
+width: 90px;
+height: 30px;
+font-size: 15px;
+text-align: center;
+}
+
+.btn-primary:hover {
+background-color: #0069d9; /* Change the background color on hover */
+border-color: #0069d9; /* Change the border color on hover */
+}
+
+input {
+    display: block;
+    width: 50vw;
+    padding: 0 1.25rem;
+}
+
+input,
+input::placeholder {
+    font: 1.25rem/3 sans-serif;
+}
+
+.modal-content {
+    border-radius: 0;
+  }
+
+  .modal-header {
+    background-color: #f8f9fa;
+    border-bottom: none;
+  }
+
+  .modal-title {
+    color: #1e3d58;
+    font-weight: bold;
+  }
+
+  .modal-body {
+    color: #315e85;
+  }
+
+  .modal-footer {
+    background-color: #f8f9fa;
+    border-top: none;
+  }

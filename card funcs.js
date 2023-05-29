@@ -6,8 +6,6 @@
     var element4 = document.getElementById("myElement4");
     element.innerHTML = "$0.0";
     element2.innerHTML = "Cashback Deposited Into Your Account!"
-    element.innerHTML = "$0.0";
-    element2.innerHTML = "Cashback Deposited Into Your Account!"
     
   }
 

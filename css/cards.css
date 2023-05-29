@@ -105,6 +105,13 @@ footer {
     vertical-align: top;
     color: #1e3d58;
   }
+  
+  #table{
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
 
   .notification {
     display: none;
