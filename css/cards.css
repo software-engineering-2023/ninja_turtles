@@ -82,7 +82,18 @@ footer {
   }
 
   tr:hover {
-    background-color: #f9f9f9;
+    background-color: #1e3d58;
+  }
+
+  li  {
+    list-style: none;
+  }
+
+  h3{
+    text-align: left;
+    vertical-align: top;
+    text-indent: 5%;
+    color: #1e3d58;
   }
   
 
