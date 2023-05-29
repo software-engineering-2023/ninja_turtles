@@ -1,9 +1,3 @@
-
-
-
-
-
-
 html, body{
 	height: 100%;
 	width:100%;
@@ -29,13 +23,8 @@ html, body{
 	color: #FFF;
 }
 
-
-
-
-
-
 #home{
-	background-color:#e8eef1 ;
+	background: url(images/family_laughing.jpg) no-repeat center center fixed;
 	display: table;
 	height:100%;
 	position: relative;
@@ -46,7 +35,7 @@ html, body{
 .landing-text{
 	display: table-cell;
 	text-align: center;
-	vertical-align:-webkit-baseline-middle;
+	vertical-align: middle;
 }
 
 .landing-text h1{
@@ -55,25 +44,33 @@ html, body{
 	color:#1e3d58
 }
 
-.info-text{
+.landing-text h3{
+	font-weight: 100%;
+	color:#1e3d58
+}
 
-	font-size: 350%;
-	font-weight: 80%;
-	text-align:left;
-	color:#1e3d58;
-
+.landing-text a{
+	color:#1e3d58
 }
 
 
-
-.dropdown-menu a{
-		color:#1e3d58;
-	
+.padding{
+	padding: 80px 0;
+}
+.padding h4{
+    text-align: center;
+    color:#1e3d58;
 }
 
+.padding h2{
+    text-align: center;
+    color:#1e3d58;
+}
 
-
-
+.padding p{
+    text-align: center;
+    color:#1e3d58;
+}
 
 footer {
 	width: 100%;

@@ -16,10 +16,11 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-  <link href="./css/open.css" rel="stylesheet" />
+  <link href="./css/bankannouncement1.css" rel="stylesheet" />
 </head>
 
-<body>
+
+
 <nav class="navbar navbar-expand-md navbar-fixed-top" role="navigation">
     <a class="navbar-brand" href="#"><img src='./css/images/logo.jpg' width="110px" length="30px">
     </a>
@@ -49,18 +50,16 @@
 
             <a class="dropdown-item" href="bills">Bills</a>
 
+
             <div class="dropdown-divider"></div>
 
             <a class="dropdown-item" href="reminders">Manage Reminders</a>
-
-
 
 
             </div>
         </li>
         
     </ul>
-
 
 
     <ul class="navbar-nav md-auto">
@@ -99,7 +98,6 @@
     </ul>
 
 
-
     <ul class="navbar-nav md-auto">
         <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href='#' id="navbarDropdown" 
@@ -115,94 +113,90 @@
         </li>
         
     </ul>
+
+
+   
+
+
+
 </div>
 
 </nav>
 
 
 
+<div id="home">
+    <div class="landing-text">
+        <h1>Introducing the Smart Loan</h1>
+    </div>
+</div>
 
+<div class="padding">
+    <div class="container">
+        <div class="row">
+            <h2>Your Path to Financial Freedom!</h2>
+            <p class="lead">Are you dreaming of starting a business, renovating your home,
+                 or pursuing higher education? Look no further!
+                  Smart loan is here to make your dreams a reality with its flexible and affordable loan options.
+                </p>
 
-<div class="container">
-    <form class="form-signup">
-        <h1>Open Bank Account</h1>
-        <br>
-        <br>
-        <br>
-        <div class="form-group">
-            <div class="row">
-            <div class="col-md-6">
-                <input type="text" class="form-control" name="deposit" placeholder="Initial deposit amount"> 
-
-            </div>
-            <div class="col-md-6">
-                <input type="text" class="form-control" name="income" placeholder="Monthly Income"> 
-            </div>
         </div>
-        </div>
-
-        <br>
-        <br>
-        <br>
-        <div class="form-group">
-            <input type="text" class="form-control" name="address" placeholder="Residential address">
-        </div>
-        <br>
-        <br>
-        <br>
-        <div class="form-group">
-            <label for="account-type">Account Type</label>
-            <br>
-            <br>
-            <select class="form-control" id="account-type" name="accountType">
-                <option value="savings">Savings Account</option>
-                <option value="checking">Checking Account</option>
-                <option value="credit">Credit Card Account</option>
-                <option value="business">Business Account</option>
-                <option value="student">Student Account</option>
-            </select>
-        </div>
-        <br>
-        <br>
-        <br>
-
-        <div class="form-group">
-            <label>
-                <input type="checkbox" name="">
-                I accept the <a href="#">Terms of Use</a> & <a href="#">Privacy Policy</a>
-            </label>
-        </div>
-        <br>
-        <br>
-        <br>
-       <button type="submit" class="btn" onclick="openPopup()">Submit</button>
-       <div class="popup" id="popup">
-        <h2>Request to create account sent successfully!</h2>
-        <p>You'll be receiving a notification soon if account creation approved.</p>
-        <button type="button" onclick="closePopup()">Close</button> 
-       </div>
-        <br>
-        <br>
-        <br>
-        <script>
-        let popup = document.getElementById("popup");
-        function openPopup(){
-            event.preventDefault();
-            popup.classList.add("open-popup");
-        }
-        function closePopup(){
-            popup.classList.remove("open-popup");
-        }
-        </script>
-    </form>
+    </div>
 </div>
 
 
 
-  
-    
-  
-    
+<div class="padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <h4>Competitive Interest Rates</h4>
+                <p>We offer highly competitive interest rates that will help you save
+                    money over the life of your loan. Say goodbye to high interest
+                     rates that drain your finances.
+                </p>
+
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <h4>Quick and Easy Application</h4>
+                <p>With SmartBank, applying for a loan has never been easier. Our streamlined online application 
+                    process ensures convenience and saves you time. Say goodbye 
+                    to complicated paperwork and long waiting periods.
+                </p>
+
+                
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <h4>Flexible Repayment Terms:</h4>
+                <p>We understand that everyone's financial situation is unique. 
+                    That's why we offer flexible repayment terms tailored to your needs.
+                     Choose a repayment plan that suits your budget and lifestyle.
+                </p>
+
+                
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <h4>No Hidden Fees</h4>
+                <p>Transparency is our priority. We believe in straightforward banking. 
+                    Rest assured, you won't encounter any hidden fees or surprises along the way.
+                </p>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="padding">
+    <div class="container">
+        <div class="row">
+            <h2>SmartBank - Empowering Your Financial Journey!</h2>
+          
+
+        </div>
+    </div>
+</div>
+
+
 
 
 
@@ -234,6 +228,10 @@
 
 
 
-</body>
+
+
+
+
+
 
 </html>
