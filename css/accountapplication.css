@@ -170,6 +170,23 @@ footer {
     top: 50%;
     transform: translate(-50%,-50%) scale(1);
   }
+
+
+  .hide-col1{
+    visibility: hidden;
+  }
+  .hide-col2{
+    visibility: hidden;
+  }
+
+  .hide-col3{
+    visibility: hidden;
+  }
+
+
+  .remove-button{
+    visibility: visible;
+  }
   .popup h3 {
    color: #1e3d58 ;
     margin-top: 0;

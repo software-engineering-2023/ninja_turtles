@@ -39,7 +39,7 @@
                 role="button" data-toggle="dropdown" style="color:#e8eef1;">Help</a>
     
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="technicalsupport">Technical Support</a>
+                <a class="dropdown-item" href="technicalsupportbanker">Technical Support</a>
     
     
                 </div>
@@ -85,31 +85,31 @@
           </tr>
         </thead>
         <tbody>
-          <tr>
+          <tr id="viewbutton1">
             <td>#998626353</td>
             <td>Regular Loan</td>
-            <td><button type="button" onclick="openPopup1()"  style='color: #1e3d58'>View</button></td>
+            <td><button type="button" onclick="openPopup1()"   style='color: #1e3d58'>View</button></td>
            
           </tr>
-          <tr>
+          <tr id="viewbutton2">
             <td>#222273635</td>
             <td>Regular Loan</td>
             <td><button type="button" onclick="openPopup2()"  style='color: #1e3d58'>View</button></td>
           </tr>
-          <tr>
+          <tr id="viewbutton3">
             <td>#398446738</td>
             <td>Regular Loan</td>
-            <td><button type="button" onclick="openPopup3()"  style='color: #1e3d58'>View</button></td>
+            <td><button type="button" onclick="openPopup3()"   style='color: #1e3d58'>View</button></td>
           </tr>
 
-          <tr>
+          <tr id="viewbutton4">
             <td>#19384656</td>
             <td>Car Loan</td>
-            <td><button type="button" onclick="openPopup4()"  style='color: #1e3d58'>View</button></td>
+            <td><button type="button" onclick="openPopup4()" style='color: #1e3d58'>View</button></td>
           </tr>
 
 
-          <tr>
+          <tr id="viewbutton5">
             <td>#2373994846</td>
             <td>Car Loan</td>
             <td><button type="button" onclick="openPopup5()"  style='color: #1e3d58'>View</button></td>
@@ -130,20 +130,25 @@
         <h3>Financial Obligations: $9,000 (Monthly Rent)</h3>
         <h3>Loan Amount: $65</h3>
         <h3>Loan Purpose: Iced Matcha Latte</h3>
-        <button type="button" onclick="closePopup1()" style="color: #1e3d58">Accept</button> 
-            <button type="button" onclick="closePopup1()" style="color: #1e3d58">Deny</button>
+        <button type="button" onclick="closePopup1();done1()" style="color: #1e3d58">Accept</button> 
+        <button type="button" onclick="closePopup1();done1()" style="color: #1e3d58">Deny</button>
+        <button type="button" onclick="closePopup1()" style="color: #1e3d58">Close</button> 
        </div>
         <br>
         <br>
         <br>
         <script>
         let popup1 = document.getElementById("popup1");
+        let viewbutton1=document.getElementById("viewbutton1");
         function openPopup1(){
             event.preventDefault();
             popup1.classList.add("open-popup1");
         }
         function closePopup1(){
             popup1.classList.remove("open-popup1");
+        }
+        function done1(){
+            viewbutton1.classList.add("hide-col1");
         }
         </script>
         </div>
@@ -161,20 +166,25 @@
         <h3>Financial Obligations: $800 (Student Loan), $400 (Credit Card)</h3>
         <h3>Loan Amount: $6677</h3>
         <h3>Loan Purpose: Vacation expenses</h3>
-            <button type="button" onclick="closePopup2()" style="color: #1e3d58">Accept</button> 
-            <button type="button" onclick="closePopup2()" style="color: #1e3d58">Deny</button> 
+        <button type="button" onclick="closePopup2();done2()" style="color: #1e3d58">Accept</button> 
+        <button type="button" onclick="closePopup2();done2()" style="color: #1e3d58">Deny</button>
+        <button type="button" onclick="closePopup2()" style="color: #1e3d58">Close</button> 
            </div>
             <br>
             <br>
             <br>
             <script>
             let popup2 = document.getElementById("popup2");
+            let viewbutton2= document.getElementById("viewbutton2")
             function openPopup2(){
                 event.preventDefault();
                 popup2.classList.add("open-popup2");
             }
             function closePopup2(){
                 popup2.classList.remove("open-popup2");
+            }
+            function done2(){
+                viewbutton2.classList.add("hide-col2");
             }
             </script>
             </div>
@@ -192,20 +202,25 @@
             <h3>Financial Obligations: $200 (Monthly Rent), $9000 (Car Loan)</h3>
             <h3>Loan Amount: $78373</h3>
             <h3>Loan Purpose: Debt Consolidation</h3>
-                <button type="button" onclick="closePopup3()" style="color: #1e3d58">Accept</button> 
-                <button type="button" onclick="closePopup3()" style="color: #1e3d58">Deny</button> 
+            <button type="button" onclick="closePopup3();done3()" style="color: #1e3d58">Accept</button> 
+            <button type="button" onclick="closePopup3();done3()" style="color: #1e3d58">Deny</button>
+            <button type="button" onclick="closePopup3()" style="color: #1e3d58">Close</button> 
                </div>
                 <br>
                 <br>
                 <br>
                 <script>
                 let popup3 = document.getElementById("popup3");
+                let viewbutton3= document.getElementById("viewbutton3");
                 function openPopup3(){
                     event.preventDefault();
                     popup3.classList.add("open-popup3");
                 }
                 function closePopup3(){
                     popup3.classList.remove("open-popup3");
+                }
+                function done3(){
+                    viewbutton3.classList.add("hide-col3");
                 }
                 </script>
                 </div>
@@ -215,29 +230,39 @@
              <h2>Application Information</h2>
              <br>
             
-            <h3>Full Name: Franz Kafka</h3>
-            <h3>DOB: 03/07/1883</h3>
+            <h3>Full Name: Sarah Davis</h3>
+            <h3>DOB: 06/05/1993</h3>
                 
-            <h3>SSN: 297236552</h3>
-            <h3>Job Title: Author</h3>
-            <h3>Monthly Income: $878</h3>
-             <h3>Financial Obligations: $200 (Monthly Rent), $9000 (Car Loan)</h3>
-             <h3>Loan Amount: $78373</h3>
-             <h3>Loan Purpose: Debt Consolidation</h3>
-                 <button type="button" onclick="closePopup4()" style="color: #1e3d58">Accept</button> 
-                 <button type="button" onclick="closePopup4()" style="color: #1e3d58">Deny</button> 
+            <h3>SSN: 2992726253</h3>
+            <h3>Job Title: Graphic Designer</h3>
+            <h3>Monthly Income: $3,200</h3>
+             <h3>Financial Obligations: $700 (Monthly Rent), $250 (Personal Loan)</h3>
+             <h3>Car Type: Hatchback</h3>
+             <h3>Car Model: Volkswagen Golf</h3>
+             <h3>Car Make: Volkswagen</h3>
+             <h3>Car Price: $56,000</h3>
+
+           
+             <button type="button" onclick="closePopup4();done4()" style="color: #1e3d58">Accept</button> 
+             <button type="button" onclick="closePopup4();done4()" style="color: #1e3d58">Deny</button>
+             <button type="button" onclick="closePopup4()" style="color: #1e3d58">Close</button> 
                 </div>
                   <br>
                  <br>
                   <br>
                <script>
                let popup4 = document.getElementById("popup4");
+               let viewbutton4= document.getElementById("viewbutton4");
              function openPopup4(){
                    event.preventDefault();
                 popup4.classList.add("open-popup4");
                }
              function closePopup4(){
                 popup4.classList.remove("open-popup4");
+                 }
+
+                 function done4(){
+                        viewbutton4.classList.remove("hide-col4");
                  }
              </script>
              </div>
@@ -248,28 +273,36 @@
          <h2>Application Information</h2>
          <br>
                     
-        <h3>Full Name: Franz Kafka</h3>
-        <h3>DOB: 03/07/1883</h3>
-        <h3>SSN: 297236552</h3>
-         <h3>Job Title: Author</h3>
-          <h3>Monthly Income: $878</h3>
-         <h3>Financial Obligations: $200 (Monthly Rent), $9000 (Car Loan)</h3>
-         <h3>Loan Amount: $78373</h3>
-         <h3>Loan Purpose: Debt Consolidation</h3>
-              <button type="button" onclick="closePopup5()" style="color: #1e3d58">Accept</button> 
-          <button type="button" onclick="closePopup5()" style="color: #1e3d58">Deny</button> 
+        <h3>Full Name: Christopher Martinez</h3>
+        <h3>DOB: 05/12/1986</h3>
+        <h3>SSN: 82775352722</h3>
+         <h3>Job Title: Teacher</h3>
+          <h3>Monthly Income: $4,600</h3>
+         <h3>Financial Obligations: $900 (Mortgage), $200 (Credit Card Debt)</h3>
+         <h3>Car Type: Sedan</h3>
+             <h3>Car Model: Toyota Camry</h3>
+             <h3>Car Make: Toyota</h3>
+             <h3>Car Price: $25,000</h3>
+     
+         <button type="button" onclick="closePopup5();done5()" style="color: #1e3d58">Accept</button> 
+         <button type="button" onclick="closePopup5();done5()" style="color: #1e3d58">Deny</button>
+         <button type="button" onclick="closePopup5()" style="color: #1e3d58">Close</button> 
               </div>
                <br>
               <br>
          <br>
              <script>
             let popup5 = document.getElementById("popup5");
+            let viewbutton5=document.getElementById("viewbutton5");
              function openPopup5(){
              event.preventDefault();
               popup5.classList.add("open-popup5");
               }
               function closePopup5(){
            popup5.classList.remove("open-popup5");
+             }
+             function done5(){
+                viewbutton5.classList.remove("hide-col5");
              }
             </script>
      </div>

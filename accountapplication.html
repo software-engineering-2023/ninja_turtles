@@ -39,7 +39,7 @@
                 role="button" data-toggle="dropdown" style="color:#e8eef1;">Help</a>
     
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="technicalsupport">Technical Support</a>
+                <a class="dropdown-item" href="technicalsupportbanker">Technical Support</a>
     
     
                 </div>
@@ -69,7 +69,13 @@
 <br>
 
 <br>
+<br>
+<br>
+
 <h1 style="color:#1e3d58">Bank Account Applications</h1>
+<br>
+<br>
+<br>
 
 
 
@@ -83,21 +89,21 @@
           </tr>
         </thead>
         <tbody>
-          <tr>
+          <tr id="viewbutton1">
             <td>#0372946</td>
             <td>Open Account</td>
-            <td><button type="button" onclick="openPopup1()"  style='color: #1e3d58'>View</button></td>
+            <td><button type="button"  onclick="openPopup1()"  style='color: #1e3d58'>View</button></td>
            
           </tr>
-          <tr>
+          <tr id="viewbutton2">
             <td>#0837265</td>
             <td>Open Account</td>
-            <td><button type="button" onclick="openPopup2()"  style='color: #1e3d58'>View</button></td>
+            <td><button type="button"  onclick="openPopup2()"  style='color: #1e3d58'>View</button></td>
           </tr>
-          <tr>
+          <tr id="viewbutton3">
             <td>#0029273</td>
             <td>Close Account</td>
-            <td><button type="button" onclick="openPopup3()"  style='color: #1e3d58'>View</button></td>
+            <td><button type="button"  onclick="openPopup3()"  style='color: #1e3d58'>View</button></td>
           </tr>
     
         </tbody>
@@ -114,20 +120,26 @@
         <h3>Monthly Income: $7283792836</h3>
         <h3>Residential Address: 4 Abou Al Karamat St., El Mohandesin, Cairo Governorate, Egypt.</h3>
         <h3>Account Type: Savings</h3>
-        <button type="button" onclick="closePopup1()" style="color: #1e3d58">Accept</button> 
-            <button type="button" onclick="closePopup1()" style="color: #1e3d58">Deny</button>
+      
+        <button type="button" onclick="closePopup1();done1()" style="color: #1e3d58">Accept</button> 
+            <button type="button" onclick="closePopup1();done1()" style="color: #1e3d58">Deny</button>
+            <button type="button" onclick="closePopup1()" style="color: #1e3d58">Close</button> 
        </div>
         <br>
         <br>
         <br>
         <script>
         let popup1 = document.getElementById("popup1");
+        let viewbutton1= document.getElementById("viewbutton1")
         function openPopup1(){
             event.preventDefault();
             popup1.classList.add("open-popup1");
         }
         function closePopup1(){
             popup1.classList.remove("open-popup1");
+        }
+        function done1(){
+            viewbutton1.classList.add("hide-col1");
         }
         </script>
         </div>
@@ -144,14 +156,18 @@
         <h3>Monthly Income: $12</h3>
         <h3>Residential Address: El Rehab</h3>
         <h3>Account Type: Business</h3>
-            <button type="button" onclick="closePopup2()" style="color: #1e3d58">Accept</button> 
-            <button type="button" onclick="closePopup2()" style="color: #1e3d58">Deny</button> 
+
+        <button type="button" onclick="closePopup2();done2()" style="color: #1e3d58">Accept</button> 
+        <button type="button" onclick="closePopup2();done2()" style="color: #1e3d58">Deny</button>
+        <button type="button" onclick="closePopup2()" style="color: #1e3d58">Close</button> 
+        
            </div>
             <br>
             <br>
             <br>
             <script>
             let popup2 = document.getElementById("popup2");
+            let viewbutton2 = document.getElementById("viewbutton2");
             function openPopup2(){
                 event.preventDefault();
                 popup2.classList.add("open-popup2");
@@ -159,6 +175,9 @@
             function closePopup2(){
                 popup2.classList.remove("open-popup2");
             }
+            function done2(){
+            viewbutton2.classList.add("hide-col2");
+        }
             </script>
             </div>
 
@@ -170,22 +189,30 @@
             <h3>First Name: Bassem</h3>
             <h3>Last Name: Ibrahim</h3>
             <h3>National ID Number: 87626254348</h3>
-            <h3>Account Number: RS35260005601001611379</h3>
+
+            <h3>Initial Deposit Amount: $450</h3>
+            <h3>Monthly Income: $1,400</h3>
+            <h3>Residential Address: 13 9th Street, El Mokattam, Cairo, Egypt</h3>
             <h3>Account Type: Student</h3>
-                <button type="button" onclick="closePopup3()" style="color: #1e3d58">Accept</button> 
-                <button type="button" onclick="closePopup3()" style="color: #1e3d58">Deny</button> 
+            <button type="button" onclick="closePopup3();done3()" style="color: #1e3d58">Accept</button> 
+            <button type="button" onclick="closePopup3();done3()" style="color: #1e3d58">Deny</button>
+            <button type="button" onclick="closePopup3()" style="color: #1e3d58">Close</button>  
                </div>
                 <br>
                 <br>
                 <br>
                 <script>
                 let popup3 = document.getElementById("popup3");
+                let viewbutton3= document.getElementById("viewbutton3");
                 function openPopup3(){
                     event.preventDefault();
                     popup3.classList.add("open-popup3");
                 }
                 function closePopup3(){
                     popup3.classList.remove("open-popup3");
+                }
+                function done3(){
+                    viewbutton3.classList.add("hide-col3");
                 }
                 </script>
                 </div>
