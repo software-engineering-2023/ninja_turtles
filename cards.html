@@ -13,8 +13,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.min.js"></script>
+    <script src="F:\UNI\Sem6\se_m333\ninja_turtles\card funcs.js"></script>
   <link href="./css/cards.css" rel="stylesheet" />
 </head>
 
@@ -55,7 +54,6 @@
 
             <a class="dropdown-item" href="reminders">Manage Reminders</a>
 
-
             </div>
 
             <div class="dropdown-divider"></div>
@@ -64,9 +62,7 @@
 
 
             </div>
-
         </li>
-        
     </ul>
 
 
@@ -85,9 +81,6 @@
         </li>
         
     </ul>
-
-  
-
 
     <ul class="navbar-nav md-auto">
         <li class="nav-item dropdown">
@@ -121,12 +114,6 @@
         </li>
         
     </ul>
-
-
-   
-
-
-
 </div>
 
 </nav>
@@ -143,6 +130,7 @@
                         <th>CVV</th>
                         <th>Credit Score</th>
                         <th>Cashback</th>
+                        <th>Status Notification</th>
                       </tr>
                     </thead>
                     <tbody>
@@ -152,23 +140,8 @@
                         <td>12/2027</td>
                         <td>374</td>
                         <td>673</td>
-                        <td>$38.35 <button id="rectangle2" type="button" class="btn btn-primary" data-toggle="modal" data-target="#notificationModal">Redeem Cashback</button>
-                            <div class="modal fade" id="notificationModal" tabindex="-1" role="dialog" aria-labelledby="notificationModalLabel" aria-hidden="true">
-                                <div class="modal-dialog" role="document">
-                                  <div class="modal-content">
-                                    <div class="modal-header">
-                                      <h5 class="modal-title" id="notificationModalLabel">Notification</h5>
-                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                      </button>
-                                    </div>
-                                    <div class="modal-body">
-                                      This is a notification message.
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                        </td>
+                        <td id="myElement">$38.35 <button id="rectangle2" onclick="changeText();">Redeem Cashback</button></td>
+                        <td id="myElement2">None</td>
                       </tr>
                     </tbody>
                     </table>
@@ -269,6 +242,7 @@
                         <th>CVV</th>
                         <th>Credit Score</th>
                         <th>Cashback</th>
+                        <th>Status Notification</th>
                       </tr>
                     </thead>
                     <tbody>
@@ -278,23 +252,8 @@
                         <td>12/2025</td>
                         <td>123</td>
                         <td>712</td>
-                        <td>$56.35<button id="rectangle2" type="button" class="btn btn-primary" data-toggle="modal" data-target="#notificationModal">Redeem Cashback</button>
-                            <div class="modal fade" id="notificationModal" tabindex="-1" role="dialog" aria-labelledby="notificationModalLabel" aria-hidden="true">
-                                <div class="modal-dialog" role="document">
-                                  <div class="modal-content">
-                                    <div class="modal-header">
-                                      <h5 class="modal-title" id="notificationModalLabel">Notification</h5>
-                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                      </button>
-                                    </div>
-                                    <div class="modal-body">
-                                      This is a notification message.
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                        </td>
+                        <td id="myElement3">$56.35 <button id="rectangle2" onclick="changeText2();">Redeem Cashback</button></td>
+                        <td id="myElement4">None</td>
                       </tr>
                     </tbody>
                     </table>
