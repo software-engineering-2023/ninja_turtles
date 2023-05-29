@@ -53,6 +53,16 @@ footer {
     border-radius: 15px;
     cursor: pointer;
   }
+
+  #rectangle2 {
+    width: 100px;
+    height: 20px;
+    background-color:#1e3d58;
+    transition: box-shadow 0.3s ease;
+    border-radius: 2.5px;
+    cursor: pointer;
+    text-align: center;
+  }
   
   #rectangle:hover {
     box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
@@ -74,6 +84,7 @@ footer {
     padding: 10px;
     text-align: left;
     border-bottom: 1px solid #ddd;
+    font-weight: bold;
   }
 
   th {
@@ -92,7 +103,6 @@ footer {
   h3{
     text-align: left;
     vertical-align: top;
-    text-indent: 5%;
     color: #1e3d58;
   }
   
