@@ -16,7 +16,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-  <link href="./css/transfer.css" rel="stylesheet" />
+  <link href="./css/openaccountnoaccount.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -36,30 +36,34 @@
                 role="button" data-toggle="dropdown" style="color:#e8eef1;">Account</a>
     
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="bankaccount">Bank Account</a>
-                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="openaccountnoaccount">Create Bank Account</a>
     
-                <a class="dropdown-item" href="cards">Cards</a>
     
-                <div class="dropdown-divider"></div>
-    
-                <a class="dropdown-item" href="loans">Loans</a>
     
                 <div class="dropdown-divider"></div>
     
-                <a class="dropdown-item" href="bills">Bills</a>
-
-                <div class="dropdown-divider"></div>
-
-                <a class="dropdown-item" href="outgoing">View Outgoing Applications</a>
+                <a class="dropdown-item" href="outgoingnoaccount">View Outgoing Applications</a>
     
                 <div class="dropdown-divider"></div>
     
                 <a class="dropdown-item" href="home">Log Out</a>
     
     
+            </li>
+            
+        </ul>
+    
+      
     
     
+        <ul class="navbar-nav md-auto">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href='#' id="navbarDropdown" 
+                role="button" data-toggle="dropdown" style="color:#e8eef1;">Help</a>
+    
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+    
+                <a class="dropdown-item" href="technicalsupportnoaccount">Technical Support</a>
     
                 </div>
             </li>
@@ -67,90 +71,88 @@
         </ul>
     
     
-    
         <ul class="navbar-nav md-auto">
-        
-            <a href="reminders" 
-            role="button"  style="color:#e8eef1;">Reminders</a>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href='#' id="navbarDropdown" 
+                role="button" data-toggle="dropdown" style="color:#e8eef1;"><img src="./css/images/bell.png" width="20px" height="20px" ></a>
     
-        
-        
-    </ul>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
     
-    
-    
-    
-    <ul class="navbar-nav md-auto">
-      <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href='#' id="navbarDropdown" 
-          role="button" data-toggle="dropdown" style="color:#e8eef1;">Help</a>
-    
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="report">Report</a>
-          <div class="dropdown-divider"></div>
-    
-          <a class="dropdown-item" href="technicalsupport">Technical Support</a>
-    
-          </div>
-      </li>
-      
-    </ul>
+                <a class="dropdown-item">Bank Announcement: Download the NTCB App!</a>
+             
+            </li>
+            
+        </ul>
     
     
-    
-    <ul class="navbar-nav md-auto">
-      <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href='#' id="navbarDropdown" 
-          role="button" data-toggle="dropdown" style="color:#e8eef1;"><img src="./css/images/bell.png" width="20px" height="20px" ></a>
-    
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="bankannouncement1">Bank Announcement: The Smart Loan</a>
-    
-          <div class="dropdown-divider"></div>
-    
-          <a class="dropdown-item">Bank Announcement: Download the NTCB App!</a>
        
-      </li>
-      
-    </ul>
-    <a href="client"><img src='./css/images/backk-removebg-preview.png' width="30px" length="20px"></a>
+    
+    
+    
     </div>
     
     </nav>
+    
 
 
 
 
+<div class="container">
+    <form class="form-signup">
+        <h1>Open Bank Account</h1>
+        <br>
+        <br>
+        <br>
+        <div class="form-group">
+            <div class="row">
+            <div class="col-md-6">
+                <input type="text" class="form-control" name="deposit" placeholder="Initial deposit amount"> 
 
-<div class="transfer-box">
-    <h2>Report</h2>
-    <form>
-      <label for="recipient">Cardholder Name:</label>
-      <input type="text" id="recipient" name="recipient" required>
+            </div>
+            <div class="col-md-6">
+                <input type="text" class="form-control" name="income" placeholder="Monthly Income"> 
+            </div>
+        </div>
+        </div>
 
-      <label for="account">Credit Card Number:</label>
-      <input type="text" id="account" name="account" required>
+        <br>
+        <br>
+        <br>
+        <div class="form-group">
+            <input type="text" class="form-control" name="address" placeholder="Residential address">
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="form-group">
+            <label for="account-type">Account Type</label>
+            <br>
+            <br>
+            <select class="form-control" id="account-type" name="accountType">
+                <option value="savings">Savings Account</option>
+                <option value="checking">Checking Account</option>
+                <option value="credit">Credit Card Account</option>
+                <option value="business">Business Account</option>
+                <option value="student">Student Account</option>
+            </select>
+        </div>
+        <br>
+        <br>
+        <br>
 
-      <label for="account">Cardholder Phone Number:</label>
-      <input type="text" id="country" name="country" required>
-
-      <label for="account">Cardholder Email:</label>
-      <input type="text" id="bank" name="bank" required>
-
-      <div class="form-group">
-        <label for="account-type">Incident Description</label>
-        <select class="form-control" id="account-type" name="accountType">
-            <option value="savings">Theft</option>
-            <option value="checking">Loss</option>
-            <option value="credit">Damage</option>
-        </select>
-      </div>
-
-      <button type="submit" class="btn" onclick="openPopup()">Submit</button>
+        <div class="form-group">
+            <label>
+                <input type="checkbox" name="">
+                I accept the <a href="#">Terms of Use</a> & <a href="#">Privacy Policy</a>
+            </label>
+        </div>
+        <br>
+        <br>
+        <br>
+       <button type="submit" class="btn" onclick="openPopup()">Submit</button>
        <div class="popup" id="popup">
-        <h2>Report successful!</h2>
-        <p>Your credit card will be blocked.</p>
-        <button type="button" href="replacement">Apply for a replacement</button>
+        <h2>Request to create account sent successfully!</h2>
+        <p>You'll be receiving a notification soon if account creation approved.</p>
         <button type="button" onclick="closePopup()">Close</button> 
        </div>
         <br>
@@ -168,6 +170,20 @@
         </script>
     </form>
 </div>
+
+
+
+  
+    
+  
+    
+
+
+
+
+
+
+
 <footer class="container-fluid text-center">
     <div class="row">
         <div class="col-sm-4">

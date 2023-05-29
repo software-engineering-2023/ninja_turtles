@@ -53,18 +53,23 @@ app.post("/login", function(req,res){
         res.sendFile(__dirname + "/client.html");
     }
     else{
-        if(req.body.username=="admin" && req.body.password=="admin"){
-            res.sendFile(__dirname + "/admin.html");
+        if(req.body.username=="clientnoaccount" && req.body.password=="lientnoaccount"){
+            res.sendFile(__dirname + "/clientnoaccount.html");
         }
         else{
-            if(req.body.username=="banker" && req.body.password=="banker"){
-                res.sendFile(__dirname + "/banker.html");
+            if(req.body.username=="admin" && req.body.password=="admin"){
+                res.sendFile(__dirname + "/admin.html");
             }
             else{
                 alert("Incorrect credentials. Please register if you don't have an account.");
             }
 
         }
+        
+        
+           
+           
+        
 
     }
 
@@ -88,7 +93,9 @@ app.post("/login", function(req,res){
 app.get("/about", function(req,res){
     res.sendFile(__dirname + "/about.html");
 })
-
+app.get("/home", function(req,res){
+    res.sendFile(__dirname + "/home.html");
+})
 app.get("/services", function(req,res){
     res.sendFile(__dirname + "/services.html");
 })
@@ -108,6 +115,12 @@ app.get("/registernoaccount", function(req,res){
 app.get("/otp", function(req,res){
     res.sendFile(__dirname + "/otp.html");
 })
+app.get("/bills", function(req,res){
+    res.sendFile(__dirname + "/bills.html");
+})
+app.get("/clientnoaccount", function(req,res){
+    res.sendFile(__dirname + "/otp.html");
+})
 
 app.get("/otpnoaccount", function(req,res){
     res.sendFile(__dirname + "/otpnoaccount.html");
@@ -120,9 +133,18 @@ app.get("/client", function(req,res){
 app.get("/bankaccount", function(req,res){
     res.sendFile(__dirname + "/bankaccount.html");
 })
+app.get("/technicalsupport", function(req,res){
+    res.sendFile(__dirname + "/technicalsupport.html");
+})
+app.get("/bankannouncement1", function(req,res){
+    res.sendFile(__dirname + "/bankannouncement1.html");
+})
 
 app.get("/openaccount", function(req,res){
     res.sendFile(__dirname + "/openaccount.html");
+})
+app.get("/outgoing", function(req,res){
+    res.sendFile(__dirname + "/outgoing.html");
 })
 app.get("/closeaccount", function(req,res){
     res.sendFile(__dirname + "/closeaccount.html");
