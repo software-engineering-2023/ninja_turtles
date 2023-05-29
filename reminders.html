@@ -182,22 +182,15 @@
               <td>12,150 EGP</td>
             </tr>
           </tbody>
-      </table>
-      
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
+        </table>
       <br>
       <br>
       <br>
       <div class='parent'>
-      <div class='child'>
-      <div class="row">
-        <div class="col-sm-6">
+       <div class='child'>
+        <div class="row">
+         <div class="col-sm-6">
            <div class="form-group">
-        
               <label for="reminder-type">Reminder Type</label>
               <select class="form-control" id="reminder-type" name="reminderType">
               <option value="savings">Electricity bills</option>
@@ -222,15 +215,20 @@
                 </div>
             </div>
             </div>
-          <a href="openaccount" class="btn btn-default btn-lg">Add a new Reminder</a>
+            <button type="new-reminder" class="btn" onclick="openPopup()">Add a new Reminder</button>
+            <div class="popup" id="popup">
+             <h2>Reminder added successfully</h2>
+             <button type="button" onclick="closePopup()">Close</button> 
+           </div> 
         </div>
       </div>
       </div>
+      
       <div class='child'>
         <div class="row">
           <div class="col-sm-6">
+           
              <div class="form-group">
-          
                 <label for="reminder-type">Reminder Type</label>
                 <select class="form-control" id="reminder-type" name="reminderType">
                 <option value="savings">Electricity bills</option>
@@ -241,25 +239,46 @@
            </div>
        </div>
       </div>
-        <br>
         <div class="row">
           <div class="col-sm-6">
               <div class="form-group">
                   <div class="row">
-                  <div class="col-md-6">
+                   <div class="col-md-6">
+                    <br>
+                   
                       <input type="text" class="form-control" name="Amount" placeholder="Amount"> 
       
                   </div>
                   <div class="col-md-6">
+                    <br>
+                   
                       <input type="text" class="form-control" name="Date" placeholder="Date"> 
                   </div>
-               <br>
+              
               </div>
-            <a href="openaccount" class="btn btn-default btn-lg">Delete a Reminder</a>
+              <br>
+              <button type="delete-reminder" class="btn" onclick="openPopup()">Delete a Reminder</button>
+              <div class="popup" id="popup">
+               <h2>Reminder deleted successfully</h2>
+               <button type="button" onclick="closePopup()">Close</button> 
+             </div> 
           </div>
         </div>
        </div>
      </div>
+     <br>
+        <br>
+        <br>
+        <script>
+        let popup = document.getElementById("popup");
+        function openPopup(){
+            event.preventDefault();
+            popup.classList.add("open-popup");
+        }
+        function closePopup(){
+            popup.classList.remove("open-popup");
+        }
+        </script>
     </div>
      
   
