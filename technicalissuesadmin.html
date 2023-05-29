@@ -16,7 +16,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-  <link href="./css/reportsbanker.css" rel="stylesheet" />
+  <link href="./css/technicalissuesadmin.css" rel="stylesheet" />
 </head>
 
 
@@ -26,26 +26,6 @@
     <nav class="navbar navbar-expand-md navbar-fixed-top" role="navigation">
         <a class="navbar-brand" href="#"><img src='./css/images/logo.jpg' width="110px" length="30px">
         </a>
-    
-        <button class="navbar-toggler" type="button" data-toggle="collapse" 
-        data-target="#navbarSupportedContent">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ml-auto">
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href='#' id="navbarDropdown" 
-                role="button" data-toggle="dropdown" style="color:#e8eef1;">Help</a>
-    
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="technicalsupportbanker">Technical Support</a>
-    
-    
-                </div>
-            </li>
-            
-        </ul>
 
         <ul class="navbar-nav md-auto">
         
@@ -57,31 +37,19 @@
     </ul>
     
     
-     
-
-        <ul class="navbar-nav md-auto">
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href='#' id="navbarDropdown" 
-                role="button" data-toggle="dropdown" style="color:#e8eef1;"><img src="./css/images/bell.png" width="20px" height="20px" ></a>
-    
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">RE: Issue with viewing clients' info resolved</a>
-               
-            </li>
-            
-        </ul>
-
-
-    </div>
     
     </nav>
-
-   
-
     <br>
-
 <br>
-<h1 style="color:#1e3d58">Reports</h1>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+<h1 style="color:#1e3d58">Technical Issues</h1>
 
 <br>
 
@@ -90,33 +58,27 @@
     <table>
         <thead>
           <tr>
-            <th>Report ID</th>
+            <th>Issue ID</th>
             <th>Type</th>
             <th>View</th>
           </tr>
         </thead>
         <tbody>
           <tr id="viewbutton1">
-            <td>#902927</td>
-            <td>Theft</td>
+            <td>#039227</td>
+            <td>Website</td>
             <td><button type="button" onclick="openPopup1()"   style='color: #1e3d58'>View</button></td>
            
           </tr>
           <tr id="viewbutton2">
-            <td>#22237465</td>
-            <td>Damage</td>
+            <td>#99383763</td>
+            <td>Account</td>
             <td><button type="button" onclick="openPopup2()"  style='color: #1e3d58'>View</button></td>
           </tr>
           <tr id="viewbutton3">
-            <td>#928736363</td>
-            <td>Loss</td>
+            <td>#18273546</td>
+            <td>Website</td>
             <td><button type="button" onclick="openPopup3()"   style='color: #1e3d58'>View</button></td>
-          </tr>
-
-          <tr id="viewbutton4">
-            <td>#22377888</td>
-            <td>Loss</td>
-            <td><button type="button" onclick="openPopup4()" style='color: #1e3d58'>View</button></td>
           </tr>
 
     
@@ -124,16 +86,15 @@
     </table>
 
     <div class="popup" id="popup1">
-        <h2>Report Details</h2>
+        <h2>Issue Information</h2>
         <br>
+        <h3>Sender's email: alexander.brown23@hotmail.com</h3>
 
-        <h3>Cardholder Name: Ethan Robinson</h3>
-        <h3>CCN: 5588822366123640, 8/2023, 592</h3>
-        <h3>Cardholder Phone Number: +1 (555) 864-2097</h3>
-        <h3>Cardholder email: ethan.robinson@gmail.com</h3>
-        <input type="text" id="message" placeholder="Message"> 
+        <h3>Report Subject: Transactions not showing</h3>
+        <h3>Issue Description: I have made recent transactions but they're not shown in my log. How do i fix that?</h3>
+        <input type="text" id="message" placeholder="Instructions: "> 
        
-        <button type="button" onclick="closePopup1();done1()" style="color: #1e3d58">Freeze Credit Card</button> 
+        <button type="button" onclick="closePopup1();done1()" style="color: #1e3d58">Send Instructions to e-mail</button> 
         <button type="button" onclick="closePopup1()" style="color: #1e3d58">Close</button> 
        </div>
         <br>
@@ -157,17 +118,16 @@
 
         <div class="popup" id="popup2">
 
-            <h2>Report Details</h2>
-        <br>
-
-        <h3>Cardholder Name: Emily Smith</h3>
-        <h3>CCN: 5407127699890009, 5/2028, 456</h3>
-        <h3>Cardholder Phone Number: +1 (555) 369-2580</h3>
-        <h3>Cardholder email: emily.smith87@yahoo.com</h3>
-        <input type="text" id="message" placeholder="Message"> 
-       
-        <button type="button" onclick="closePopup2();done2()" style="color: #1e3d58">Freeze Credit Card</button> 
-        <button type="button" onclick="closePopup2()" style="color: #1e3d58">Close</button> 
+            <h2>Issue Information</h2>
+            <br>
+            <h3>Sender's email: david.wilson@gmail.com</h3>
+    
+            <h3>Report Subject: IBAN not working</h3>
+            <h3>Issue Description: I'm trying to use my IBAN to make a transaction but it doesn't work.</h3>
+            <input type="text" id="message" placeholder="Instructions: "> 
+           
+            <button type="button" onclick="closePopup2();done2()" style="color: #1e3d58">Send Instructions to e-mail</button> 
+            <button type="button" onclick="closePopup2()" style="color: #1e3d58">Close</button> 
            </div>
             <br>
             <br>
@@ -190,17 +150,16 @@
 
             <div class="popup" id="popup3">
                 
-                <h2>Report Details</h2>
+                <h2>Issue Information</h2>
                 <br>
+                <h3>Sender's email: daniel.miller@outlook.com</h3>
         
-                <h3>Cardholder Name: Alexander Brown</h3>
-                <h3>CCN: 5277546556585484, 9/2027, 808</h3>
-                <h3>Cardholder Phone Number: +1 (555) 246-8135</h3>
-                <h3>Cardholder email: alexander.brown23@hotmail.com</h3>
-                <input type="text" id="message" placeholder="Message"> 
+                <h3>Report Subject: Submission Failure</h3>
+                <h3>Issue Description: When I try to submit a loan application form i get a submission failure.</h3>
+                <input type="text" id="message" placeholder="Instructions: "> 
                
-                <button type="button" onclick="closePopup3();done3()" style="color: #1e3d58">Freeze Credit Card</button> 
-                <button type="button" onclick="closePopup3()" style="color: #1e3d58">Close</button> 
+                <button type="button" onclick="closePopup3();done3()" style="color: #1e3d58">Send Instructions to e-mail</button> 
+                <button type="button" onclick="closePopup3()" style="color: #1e3d58">Close</button>  
                </div>
                 <br>
                 <br>
@@ -220,40 +179,8 @@
                 }
                 </script>
                 </div>
-
-             <div class="popup" id="popup4">
-                
-                <h2>Report Details</h2>
-                <br>
+                        
         
-                <h3>Cardholder Name: Lily Jones</h3>
-                <h3>CCN: 4485206516905691, 9/2025, 808</h3>
-                <h3>Cardholder Phone Number: +1 (555) 987-6543</h3>
-                <h3>Cardholder email: lily.jones2000@outlook.com</h3>
-                <input type="text" id="message" placeholder="Message"> 
-               
-                <button type="button" onclick="closePopup4();done4()" style="color: #1e3d58">Freeze Credit Card</button> 
-                <button type="button" onclick="closePopup4()" style="color: #1e3d58">Close</button> 
-                </div>
-                  <br>
-                 <br>
-                  <br>
-               <script>
-               let popup4 = document.getElementById("popup4");
-               let viewbutton4= document.getElementById("viewbutton4");
-             function openPopup4(){
-                   event.preventDefault();
-                popup4.classList.add("open-popup4");
-               }
-             function closePopup4(){
-                popup4.classList.remove("open-popup4");
-                 }
-
-                 function done4(){
-                        viewbutton4.classList.add("hide-col4");
-                 }
-             </script>
-             </div>
                 
 
 
@@ -264,6 +191,12 @@
 <br>
 <br>
 
+
+
+
+    
+        
+ 
 
 
 
