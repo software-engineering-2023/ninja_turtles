@@ -16,12 +16,12 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-  <link href="./css/accountapplication.css" rel="stylesheet" />
+  <link href="./css/loanappbanker.css" rel="stylesheet" />
 </head>
-
-
+</html>
 
 <body>
+
 
     <nav class="navbar navbar-expand-md navbar-fixed-top" role="navigation">
         <a class="navbar-brand" href="#"><img src='./css/images/logo.jpg' width="110px" length="30px">
@@ -66,11 +66,13 @@
     </div>
     
     </nav>
-<br>
+
+    <br>
 
 <br>
-<h1 style="color:#1e3d58">Bank Account Applications</h1>
+<h1 style="color:#1e3d58">Loan Applications</h1>
 
+<br>
 
 
 
@@ -84,20 +86,33 @@
         </thead>
         <tbody>
           <tr>
-            <td>#0372946</td>
-            <td>Open Account</td>
+            <td>#998626353</td>
+            <td>Regular Loan</td>
             <td><button type="button" onclick="openPopup1()"  style='color: #1e3d58'>View</button></td>
            
           </tr>
           <tr>
-            <td>#0837265</td>
-            <td>Open Account</td>
+            <td>#222273635</td>
+            <td>Regular Loan</td>
             <td><button type="button" onclick="openPopup2()"  style='color: #1e3d58'>View</button></td>
           </tr>
           <tr>
-            <td>#0029273</td>
-            <td>Close Account</td>
+            <td>#398446738</td>
+            <td>Regular Loan</td>
             <td><button type="button" onclick="openPopup3()"  style='color: #1e3d58'>View</button></td>
+          </tr>
+
+          <tr>
+            <td>#19384656</td>
+            <td>Car Loan</td>
+            <td><button type="button" onclick="openPopup4()"  style='color: #1e3d58'>View</button></td>
+          </tr>
+
+
+          <tr>
+            <td>#2373994846</td>
+            <td>Car Loan</td>
+            <td><button type="button" onclick="openPopup5()"  style='color: #1e3d58'>View</button></td>
           </tr>
     
         </tbody>
@@ -107,13 +122,14 @@
         <h2>Application Information</h2>
         <br>
 
-        <h3>First Name: Sana</h3>
-        <h3>Last Name: Abdullah</h3>
-        <h3>National ID Number: 1928362473222</h3>
-        <h3>Initial Deposit Amount: $-0.000038</h3>
-        <h3>Monthly Income: $7283792836</h3>
-        <h3>Residential Address: 4 Abou Al Karamat St., El Mohandesin, Cairo Governorate, Egypt.</h3>
-        <h3>Account Type: Savings</h3>
+        <h3>Full Name: Monika Sameer</h3>
+        <h3>DOB: 23/02/2002</h3>
+        <h3>SSN: 1928373655</h3>
+        <h3>Job Title: CEO of all the companies</h3>
+        <h3>Monthly Income: $1938373626</h3>
+        <h3>Financial Obligations: $9,000 (Monthly Rent)</h3>
+        <h3>Loan Amount: $65</h3>
+        <h3>Loan Purpose: Iced Matcha Latte</h3>
         <button type="button" onclick="closePopup1()" style="color: #1e3d58">Accept</button> 
             <button type="button" onclick="closePopup1()" style="color: #1e3d58">Deny</button>
        </div>
@@ -137,13 +153,14 @@
             <h2>Application Information</h2>
         <br>
 
-        <h3>First Name: Hamzah</h3>
-        <h3>Last Name: Wareh</h3>
-        <h3>National ID Number: 875221573228</h3>
-        <h3>Initial Deposit Amount: $9999999</h3>
-        <h3>Monthly Income: $12</h3>
-        <h3>Residential Address: El Rehab</h3>
-        <h3>Account Type: Business</h3>
+        <h3>Full Name: Emily Johnson</h3>
+        <h3>DOB: 10/02/1990</h3>
+        <h3>SSN: 293763646</h3>
+        <h3>Job Title: Marketing Manager</h3>
+        <h3>Monthly Income: $3,200</h3>
+        <h3>Financial Obligations: $800 (Student Loan), $400 (Credit Card)</h3>
+        <h3>Loan Amount: $6677</h3>
+        <h3>Loan Purpose: Vacation expenses</h3>
             <button type="button" onclick="closePopup2()" style="color: #1e3d58">Accept</button> 
             <button type="button" onclick="closePopup2()" style="color: #1e3d58">Deny</button> 
            </div>
@@ -167,11 +184,14 @@
             <h2>Application Information</h2>
             <br>
     
-            <h3>First Name: Bassem</h3>
-            <h3>Last Name: Ibrahim</h3>
-            <h3>National ID Number: 87626254348</h3>
-            <h3>Account Number: RS35260005601001611379</h3>
-            <h3>Account Type: Student</h3>
+            <h3>Full Name: Franz Kafka</h3>
+            <h3>DOB: 03/07/1883</h3>
+            <h3>SSN: 297236552</h3>
+            <h3>Job Title: Author</h3>
+            <h3>Monthly Income: $878</h3>
+            <h3>Financial Obligations: $200 (Monthly Rent), $9000 (Car Loan)</h3>
+            <h3>Loan Amount: $78373</h3>
+            <h3>Loan Purpose: Debt Consolidation</h3>
                 <button type="button" onclick="closePopup3()" style="color: #1e3d58">Accept</button> 
                 <button type="button" onclick="closePopup3()" style="color: #1e3d58">Deny</button> 
                </div>
@@ -190,6 +210,71 @@
                 </script>
                 </div>
 
+             <div class="popup" id="popup4">
+                
+             <h2>Application Information</h2>
+             <br>
+            
+            <h3>Full Name: Franz Kafka</h3>
+            <h3>DOB: 03/07/1883</h3>
+                
+            <h3>SSN: 297236552</h3>
+            <h3>Job Title: Author</h3>
+            <h3>Monthly Income: $878</h3>
+             <h3>Financial Obligations: $200 (Monthly Rent), $9000 (Car Loan)</h3>
+             <h3>Loan Amount: $78373</h3>
+             <h3>Loan Purpose: Debt Consolidation</h3>
+                 <button type="button" onclick="closePopup4()" style="color: #1e3d58">Accept</button> 
+                 <button type="button" onclick="closePopup4()" style="color: #1e3d58">Deny</button> 
+                </div>
+                  <br>
+                 <br>
+                  <br>
+               <script>
+               let popup4 = document.getElementById("popup4");
+             function openPopup4(){
+                   event.preventDefault();
+                popup4.classList.add("open-popup4");
+               }
+             function closePopup4(){
+                popup4.classList.remove("open-popup4");
+                 }
+             </script>
+             </div>
+
+                        
+          <div class="popup" id="popup5">
+                
+         <h2>Application Information</h2>
+         <br>
+                    
+        <h3>Full Name: Franz Kafka</h3>
+        <h3>DOB: 03/07/1883</h3>
+        <h3>SSN: 297236552</h3>
+         <h3>Job Title: Author</h3>
+          <h3>Monthly Income: $878</h3>
+         <h3>Financial Obligations: $200 (Monthly Rent), $9000 (Car Loan)</h3>
+         <h3>Loan Amount: $78373</h3>
+         <h3>Loan Purpose: Debt Consolidation</h3>
+              <button type="button" onclick="closePopup5()" style="color: #1e3d58">Accept</button> 
+          <button type="button" onclick="closePopup5()" style="color: #1e3d58">Deny</button> 
+              </div>
+               <br>
+              <br>
+         <br>
+             <script>
+            let popup5 = document.getElementById("popup5");
+             function openPopup5(){
+             event.preventDefault();
+              popup5.classList.add("open-popup5");
+              }
+              function closePopup5(){
+           popup5.classList.remove("open-popup5");
+             }
+            </script>
+     </div>
+                
+
 
 <br>
 
@@ -197,6 +282,10 @@
 <br>
 <br>
 <br>
+
+
+
+
 
 
 
@@ -223,8 +312,6 @@
             </div>
         </div>
     </footer>
-    
 
 
 </body>
-</html>

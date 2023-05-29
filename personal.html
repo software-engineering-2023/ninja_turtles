@@ -120,37 +120,70 @@
     
     </nav>
 
+<br>
+<br>
+<br>
 
+<div class="transfer-box">
+    <h1>Personal loan application</h1>
+    <br>
+    <br>
+    <form>
+        <h2>Personal Information</h2>
+      <label for="recipient">Full Name:</label>
+      <input type="text" id="name" name="name" required>
 
-<div id="home">
-    <div class="landing-text">
-        <h1>Type of bank account you would like to transfer to</h1>
+      <label for="account">Date of birth:</label>
+      <input type="date" id="account" name="birth" required>
+
+      <label for="account">Social Security Number:</label>
+      <input type="text" id="social" name="social" required>
+
+      <label for="account">Job Title:</label>
+      <input type="text" id="job" name="job" required>
+
+      <label for="amount">Monthly Income:</label>
+      <input type="text" id="income" name="income" required>
+
+      <label for="finan">Financial obligations:</label>
+      <textarea id="finan" name="finan" rows="4" required></textarea>
+
+      <br>
+      <br>
+      <h2>Loan Amount and purpose</h2>
+      <label for="amount">Loan Amount:</label>
+      <input type="text" id="loan" name="loan" required>
+      <label for="finan">Loan Purpose:</label>
+      <textarea id="finan" name="finan" rows="4" required></textarea>
+      <br>
+      <br>
+      <button type="submit" class="btn" onclick="openPopup()">Apply</button>
+       <div class="popup" id="popup">
+        <h2>Loan application submitted successfully!</h2>
+        <p>Request for loan sent successfully. You should be hearing from us shortly about whether it was accepted or not.</p>
+        <button type="button" onclick="closePopup()">Close</button> 
+       </div>
         <br>
         <br>
         <br>
-        <br>
-        <div class="info-text">
-            <a class="dropdown-item" href="internal">Internal Bank Account</a>   
-        </div>
+        <script>
+        let popup = document.getElementById("popup");
+        function openPopup(){
+            event.preventDefault();
+            popup.classList.add("open-popup");
+        }
+        function closePopup(){
+            popup.classList.remove("open-popup");
+        }
+        </script>
+    </form>
+  </div>
+  <br>
+  <br>
+  <br>
 
-            <br>
-            <br>
 
-        <div class="info-text">
-            <a class="dropdown-item" href="domestic">Domestic Bank Account</a>
-        </div>
 
-        <br>
-        <br>
-
-        <div class="info-text">
-             <a class="dropdown-item" href="international">International Bank Account</a>
-        </div>
-         <br>
-        <br>
-    </div>
-
-</div>
 
 
 <footer class="container-fluid text-center">
@@ -173,10 +206,3 @@
         </div>
     </div>
 </footer>
-
-
-
-
-</body>
-
-</html>

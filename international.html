@@ -120,37 +120,58 @@
     
     </nav>
 
+<br>
+<br>
+<br>
 
+<div class="transfer-box">
+    <h2>International Bank Transfer</h2>
+    <form>
+      <label for="recipient">Recipient's Name:</label>
+      <input type="text" id="recipient" name="recipient" required>
 
-<div id="home">
-    <div class="landing-text">
-        <h1>Type of bank account you would like to transfer to</h1>
+      <label for="account">Recipient's Account Number:</label>
+      <input type="text" id="account" name="account" required>
+
+      <label for="account">Recipient's Country:</label>
+      <input type="text" id="country" name="country" required>
+
+      <label for="account">Recipient's Bank Name:</label>
+      <input type="text" id="bank" name="bank" required>
+
+      <label for="amount">Transfer Amount:</label>
+      <input type="text" id="amount" name="amount" required>
+
+      <label for="purpose">Purpose/Description:</label>
+      <textarea id="purpose" name="purpose" rows="4" required></textarea>
+
+      <button type="submit" class="btn" onclick="openPopup()">Transfer</button>
+       <div class="popup" id="popup">
+        <h2>Transfer done successfully!</h2>
+        <p>Amount successfully transferred.</p>
+        <button type="button" onclick="closePopup()">Close</button> 
+       </div>
         <br>
         <br>
         <br>
-        <br>
-        <div class="info-text">
-            <a class="dropdown-item" href="internal">Internal Bank Account</a>   
-        </div>
+        <script>
+        let popup = document.getElementById("popup");
+        function openPopup(){
+            event.preventDefault();
+            popup.classList.add("open-popup");
+        }
+        function closePopup(){
+            popup.classList.remove("open-popup");
+        }
+        </script>
+    </form>
+  </div>
+  <br>
+  <br>
+  <br>
 
-            <br>
-            <br>
 
-        <div class="info-text">
-            <a class="dropdown-item" href="domestic">Domestic Bank Account</a>
-        </div>
 
-        <br>
-        <br>
-
-        <div class="info-text">
-             <a class="dropdown-item" href="international">International Bank Account</a>
-        </div>
-         <br>
-        <br>
-    </div>
-
-</div>
 
 
 <footer class="container-fluid text-center">
@@ -173,10 +194,3 @@
         </div>
     </div>
 </footer>
-
-
-
-
-</body>
-
-</html>
