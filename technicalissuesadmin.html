@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>NTCB LTD.</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/
+  font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <link href="./css/technicalissuesadmin.css" rel="stylesheet" />
+</head>
+
+
+
+<body>
+
+    <nav class="navbar navbar-expand-md navbar-fixed-top" role="navigation">
+        <a class="navbar-brand" href="#"><img src='./css/images/logo.jpg' width="110px" length="30px">
+        </a>
+
+        <ul class="navbar-nav md-auto">
+        
+            <a href="home" 
+            role="button"  style="color:#e8eef1;">Log Out</a>
+    
+        
+        
+    </ul>
+    
+    
+    
+    </nav>
+    <br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+<h1 style="color:#1e3d58">Technical Issues</h1>
+
+<br>
+
+
+
+    <table>
+        <thead>
+          <tr>
+            <th>Issue ID</th>
+            <th>Type</th>
+            <th>View</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr id="viewbutton1">
+            <td>#039227</td>
+            <td>Website</td>
+            <td><button type="button" onclick="openPopup1()"   style='color: #1e3d58'>View</button></td>
+           
+          </tr>
+          <tr id="viewbutton2">
+            <td>#99383763</td>
+            <td>Account</td>
+            <td><button type="button" onclick="openPopup2()"  style='color: #1e3d58'>View</button></td>
+          </tr>
+          <tr id="viewbutton3">
+            <td>#18273546</td>
+            <td>Website</td>
+            <td><button type="button" onclick="openPopup3()"   style='color: #1e3d58'>View</button></td>
+          </tr>
+
+    
+        </tbody>
+    </table>
+
+    <div class="popup" id="popup1">
+        <h2>Issue Information</h2>
+        <br>
+        <h3>Sender's email: alexander.brown23@hotmail.com</h3>
+
+        <h3>Report Subject: Transactions not showing</h3>
+        <h3>Issue Description: I have made recent transactions but they're not shown in my log. How do i fix that?</h3>
+        <input type="text" id="message" placeholder="Instructions: "> 
+       
+        <button type="button" onclick="closePopup1();done1()" style="color: #1e3d58">Send Instructions to e-mail</button> 
+        <button type="button" onclick="closePopup1()" style="color: #1e3d58">Close</button> 
+       </div>
+        <br>
+        <br>
+        <br>
+        <script>
+        let popup1 = document.getElementById("popup1");
+        let viewbutton1=document.getElementById("viewbutton1");
+        function openPopup1(){
+            event.preventDefault();
+            popup1.classList.add("open-popup1");
+        }
+        function closePopup1(){
+            popup1.classList.remove("open-popup1");
+        }
+        function done1(){
+            viewbutton1.classList.add("hide-col1");
+        }
+        </script>
+        </div>
+
+        <div class="popup" id="popup2">
+
+            <h2>Issue Information</h2>
+            <br>
+            <h3>Sender's email: david.wilson@gmail.com</h3>
+    
+            <h3>Report Subject: IBAN not working</h3>
+            <h3>Issue Description: I'm trying to use my IBAN to make a transaction but it doesn't work.</h3>
+            <input type="text" id="message" placeholder="Instructions: "> 
+           
+            <button type="button" onclick="closePopup2();done2()" style="color: #1e3d58">Send Instructions to e-mail</button> 
+            <button type="button" onclick="closePopup2()" style="color: #1e3d58">Close</button> 
+           </div>
+            <br>
+            <br>
+            <br>
+            <script>
+            let popup2 = document.getElementById("popup2");
+            let viewbutton2= document.getElementById("viewbutton2")
+            function openPopup2(){
+                event.preventDefault();
+                popup2.classList.add("open-popup2");
+            }
+            function closePopup2(){
+                popup2.classList.remove("open-popup2");
+            }
+            function done2(){
+                viewbutton2.classList.add("hide-col2");
+            }
+            </script>
+            </div>
+
+            <div class="popup" id="popup3">
+                
+                <h2>Issue Information</h2>
+                <br>
+                <h3>Sender's email: daniel.miller@outlook.com</h3>
+        
+                <h3>Report Subject: Submission Failure</h3>
+                <h3>Issue Description: When I try to submit a loan application form i get a submission failure.</h3>
+                <input type="text" id="message" placeholder="Instructions: "> 
+               
+                <button type="button" onclick="closePopup3();done3()" style="color: #1e3d58">Send Instructions to e-mail</button> 
+                <button type="button" onclick="closePopup3()" style="color: #1e3d58">Close</button>  
+               </div>
+                <br>
+                <br>
+                <br>
+                <script>
+                let popup3 = document.getElementById("popup3");
+                let viewbutton3= document.getElementById("viewbutton3");
+                function openPopup3(){
+                    event.preventDefault();
+                    popup3.classList.add("open-popup3");
+                }
+                function closePopup3(){
+                    popup3.classList.remove("open-popup3");
+                }
+                function done3(){
+                    viewbutton3.classList.add("hide-col3");
+                }
+                </script>
+                </div>
+                        
+        
+                
+
+
+<br>
+
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+    
+        
+ 
+
+
+
+
+
+<footer class="container-fluid text-center">
+    <div class="row">
+        <div class="col-sm-4">
+            <h3>Contact Us</h3>
+            <br>
+            <h4>+201120044602</h4>
+            <h4>XCPQ+HGQ, C Building, El-Obour Square, New Cairo 3</h4>
+
+        </div>
+        <div class="col-sm-4">
+            <h3>Connect</h3>
+            <a href="https://google.com" class="fa fa-google"><img src='./css/images/google.png' width="25px" height="25px"></a>
+            <a href="https://linkedin.com" class="fa fa-linkedin"><img src='./css/images/linkedin.png' width="25px" height="25px"></a>
+        </div>
+
+        <div class="col-sm-4">
+            <img src="./css/images/logo.jpg" class="icon">
+        </div>
+    </div>
+</footer>
+
+
+</body>
+
+</html>

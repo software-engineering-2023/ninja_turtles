@@ -161,6 +161,7 @@ footer {
     text-align: center;
     position: fixed;
     top: 50%;
+    display: none;
     left: 50%;
     text-align: center;
     visibility: hidden;
@@ -170,6 +171,7 @@ footer {
   .open-popup{
     visibility: visible;
     top: 50%;
+    display: block;
     transform: translate(-50%,-50%) scale(1);
   }
   
@@ -180,6 +182,7 @@ footer {
   .popup h2 {
     font-size: 20px;
     margin-top: 0;
+    color: #1e3d58;
   }
   .popup button {
     width: 100%;

@@ -16,7 +16,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-  <link href="./css/open.css" rel="stylesheet" />
+  <link href="./css/transfer.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -48,11 +48,8 @@
                 <div class="dropdown-divider"></div>
     
                 <a class="dropdown-item" href="bills">Bills</a>
-    
-    
-           
 
-    
+             
                 <div class="dropdown-divider"></div>
 
                 <a class="dropdown-item" href="outgoing">View Outgoing Applications</a>
@@ -62,11 +59,16 @@
                 <a class="dropdown-item" href="home">Log Out</a>
     
     
-
     
+    
+    
+    
+                </div>
             </li>
             
         </ul>
+    
+    
     
     
         <ul class="navbar-nav md-auto">
@@ -78,46 +80,42 @@
         
     </ul>
     
+    
+    
+    
+    <ul class="navbar-nav md-auto">
+      <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href='#' id="navbarDropdown" 
+          role="button" data-toggle="dropdown" style="color:#e8eef1;">Help</a>
+    
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="report">Report</a>
+          <div class="dropdown-divider"></div>
+    
+          <a class="dropdown-item" href="technicalsupport">Technical Support</a>
+    
+          </div>
+      </li>
       
+    </ul>
     
     
-        <ul class="navbar-nav md-auto">
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href='#' id="navbarDropdown" 
-                role="button" data-toggle="dropdown" style="color:#e8eef1;">Help</a>
     
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="report">Report</a>
-                <div class="dropdown-divider"></div>
+    <ul class="navbar-nav md-auto">
+      <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href='#' id="navbarDropdown" 
+          role="button" data-toggle="dropdown" style="color:#e8eef1;"><img src="./css/images/bell.png" width="20px" height="20px" ></a>
     
-                <a class="dropdown-item" href="technicalsupport">Technical Support</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="bankannouncement1">Bank Announcement: The Smart Loan</a>
     
-                </div>
-            </li>
-            
-        </ul>
+          <div class="dropdown-divider"></div>
     
-    
-        <ul class="navbar-nav md-auto">
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href='#' id="navbarDropdown" 
-                role="button" data-toggle="dropdown" style="color:#e8eef1;"><img src="./css/images/bell.png" width="20px" height="20px" ></a>
-    
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="bankannouncement1">Bank Announcement: The Smart Loan</a>
-    
-                <div class="dropdown-divider"></div>
-    
-                <a class="dropdown-item">Bank Announcement: Download the NTCB App!</a>
-             
-            </li>
-            
-        </ul>
-    
-    
+          <a class="dropdown-item">Bank Announcement: Download the NTCB App!</a>
        
-    
-    
+      </li>
+      
+    </ul>
     
     </div>
     
@@ -125,84 +123,35 @@
 
 
 
-
-
-<div class="container">
-    <form class="form-signup">
-        <h1>Close Bank Account</h1>
+<div id="home">
+    <div class="landing-text">
+        <h1>Type of bank account you would like to transfer to</h1>
         <br>
         <br>
         <br>
-        <div class="form-group">
-            
-            <div class="col-md-6">
-                <input type="text" class="form-control" name="accountno" placeholder="Account number"> 
-
-            </div>
-           
+        <br>
+        <div class="info-text">
+            <a class="dropdown-item" href="internal">Internal Bank Account</a>   
         </div>
-        
 
-        <br>
-        <br>
-        <br>
-        
-        <br>
-        <br>
-        <br>
-        <div class="form-group">
-            <label for="account-type">Account Type</label>
             <br>
             <br>
-            <select class="form-control" id="account-type" name="accountType">
-                <option value="savings">Savings Account</option>
-                <option value="checking">Checking Account</option>
-                <option value="credit">Credit Card Account</option>
-                <option value="business">Business Account</option>
-                <option value="student">Student Account</option>
-            </select>
+
+        <div class="info-text">
+            <a class="dropdown-item" href="domestic">Domestic Bank Account</a>
         </div>
-        <br>
+
         <br>
         <br>
 
-        <div class="form-group">
-            <label>
-                <input type="checkbox" name="">
-                I accept the <a href="#">Terms of Use</a> & <a href="#">Privacy Policy</a>
-            </label>
+        <div class="info-text">
+             <a class="dropdown-item" href="international">International Bank Account</a>
         </div>
+         <br>
         <br>
-        <br>
-        <br>
-       <button type="submit" class="btn" onclick="openPopup()">Submit</button>
-       <div class="popup" id="popup">
-        <h2>Request to close account sent successfully!</h2>
-        <p>Your account is successfully being closed.</p>
-        <button type="button" onclick="closePopup()">Close</button> 
-       </div>
-        <br>
-        <br>
-        <br>
-        <script>
-        let popup = document.getElementById("popup");
-        function openPopup(){
-            event.preventDefault();
-            popup.classList.add("open-popup");
-        }
-        function closePopup(){
-            popup.classList.remove("open-popup");
-        }
-        </script>
-    </form>
+    </div>
+
 </div>
-
-
-
-  
-
-
-
 
 
 <footer class="container-fluid text-center">

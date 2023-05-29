@@ -16,7 +16,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-  <link href="./css/open.css" rel="stylesheet" />
+  <link href="./css/transfer.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -50,9 +50,6 @@
                 <a class="dropdown-item" href="bills">Bills</a>
     
     
-           
-
-    
                 <div class="dropdown-divider"></div>
 
                 <a class="dropdown-item" href="outgoing">View Outgoing Applications</a>
@@ -62,11 +59,13 @@
                 <a class="dropdown-item" href="home">Log Out</a>
     
     
-
     
+                </div>
             </li>
             
         </ul>
+    
+    
     
     
         <ul class="navbar-nav md-auto">
@@ -78,107 +77,76 @@
         
     </ul>
     
+    
+    
+    
+    <ul class="navbar-nav md-auto">
+      <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href='#' id="navbarDropdown" 
+          role="button" data-toggle="dropdown" style="color:#e8eef1;">Help</a>
+    
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="report">Report</a>
+          <div class="dropdown-divider"></div>
+    
+          <a class="dropdown-item" href="technicalsupport">Technical Support</a>
+    
+          </div>
+      </li>
       
+    </ul>
     
     
-        <ul class="navbar-nav md-auto">
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href='#' id="navbarDropdown" 
-                role="button" data-toggle="dropdown" style="color:#e8eef1;">Help</a>
     
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="report">Report</a>
-                <div class="dropdown-divider"></div>
+    <ul class="navbar-nav md-auto">
+      <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href='#' id="navbarDropdown" 
+          role="button" data-toggle="dropdown" style="color:#e8eef1;"><img src="./css/images/bell.png" width="20px" height="20px" ></a>
     
-                <a class="dropdown-item" href="technicalsupport">Technical Support</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="bankannouncement1">Bank Announcement: The Smart Loan</a>
     
-                </div>
-            </li>
-            
-        </ul>
+          <div class="dropdown-divider"></div>
     
-    
-        <ul class="navbar-nav md-auto">
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href='#' id="navbarDropdown" 
-                role="button" data-toggle="dropdown" style="color:#e8eef1;"><img src="./css/images/bell.png" width="20px" height="20px" ></a>
-    
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="bankannouncement1">Bank Announcement: The Smart Loan</a>
-    
-                <div class="dropdown-divider"></div>
-    
-                <a class="dropdown-item">Bank Announcement: Download the NTCB App!</a>
-             
-            </li>
-            
-        </ul>
-    
-    
+          <a class="dropdown-item">Bank Announcement: Download the NTCB App!</a>
        
-    
-    
+      </li>
+      
+    </ul>
     
     </div>
     
     </nav>
 
+<br>
+<br>
+<br>
 
+<div class="transfer-box">
+    <h2>International Bank Transfer</h2>
+    <form>
+      <label for="recipient">Recipient's Name:</label>
+      <input type="text" id="recipient" name="recipient" required>
 
+      <label for="account">Recipient's Account Number:</label>
+      <input type="text" id="account" name="account" required>
 
+      <label for="account">Recipient's Country:</label>
+      <input type="text" id="country" name="country" required>
 
-<div class="container">
-    <form class="form-signup">
-        <h1>Close Bank Account</h1>
-        <br>
-        <br>
-        <br>
-        <div class="form-group">
-            
-            <div class="col-md-6">
-                <input type="text" class="form-control" name="accountno" placeholder="Account number"> 
+      <label for="account">Recipient's Bank Name:</label>
+      <input type="text" id="bank" name="bank" required>
 
-            </div>
-           
-        </div>
-        
+      <label for="amount">Transfer Amount:</label>
+      <input type="text" id="amount" name="amount" required>
 
-        <br>
-        <br>
-        <br>
-        
-        <br>
-        <br>
-        <br>
-        <div class="form-group">
-            <label for="account-type">Account Type</label>
-            <br>
-            <br>
-            <select class="form-control" id="account-type" name="accountType">
-                <option value="savings">Savings Account</option>
-                <option value="checking">Checking Account</option>
-                <option value="credit">Credit Card Account</option>
-                <option value="business">Business Account</option>
-                <option value="student">Student Account</option>
-            </select>
-        </div>
-        <br>
-        <br>
-        <br>
+      <label for="purpose">Purpose/Description:</label>
+      <textarea id="purpose" name="purpose" rows="4" required></textarea>
 
-        <div class="form-group">
-            <label>
-                <input type="checkbox" name="">
-                I accept the <a href="#">Terms of Use</a> & <a href="#">Privacy Policy</a>
-            </label>
-        </div>
-        <br>
-        <br>
-        <br>
-       <button type="submit" class="btn" onclick="openPopup()">Submit</button>
+      <button type="submit" class="btn" onclick="openPopup()">Transfer</button>
        <div class="popup" id="popup">
-        <h2>Request to close account sent successfully!</h2>
-        <p>Your account is successfully being closed.</p>
+        <h2>Transfer done successfully!</h2>
+        <p>Amount successfully transferred.</p>
         <button type="button" onclick="closePopup()">Close</button> 
        </div>
         <br>
@@ -195,11 +163,10 @@
         }
         </script>
     </form>
-</div>
-
-
-
-  
+  </div>
+  <br>
+  <br>
+  <br>
 
 
 
@@ -225,10 +192,3 @@
         </div>
     </div>
 </footer>
-
-
-
-
-</body>
-
-</html>

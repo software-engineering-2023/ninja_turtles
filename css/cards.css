@@ -106,6 +106,22 @@ footer {
     color: #1e3d58;
   }
   
+  #table{
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+
+  .notification {
+    display: none;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+  
 
   .rectangle.expanded + #hiddenText {
     display: block; /* Display the text when the rectangle is expanded */

@@ -38,6 +38,14 @@ app.get("/login", function(req,res){
     res.sendFile(__dirname + "/login.html");
 })
 
+app.get("/cards", function(req,res){
+    res.sendFile(__dirname + "/cards.html");
+})
+
+app.get("/reminders", function(req,res){
+    res.sendFile(__dirname + "/reminders.html");
+})
+
 app.post("/login", function(req,res){
 
 
@@ -59,11 +67,6 @@ app.post("/login", function(req,res){
         }
 
     }
-
-   
-
-   
-
 
     // if (req.body.username=="client" && req.body.password=="client"){
     //     res.sendFile(__dirname + "/client.html");
@@ -127,8 +130,33 @@ app.get("/closeaccount", function(req,res){
 app.get("/banktrans", function(req,res){
     res.sendFile(__dirname + "/banktrans.html");
 })
-
-
+app.get("/internal", function(req,res){
+    res.sendFile(__dirname + "/internal.html");
+})
+app.get("/international", function(req,res){
+    res.sendFile(__dirname + "/international.html");
+})
+app.get("/domestic", function(req,res){
+    res.sendFile(__dirname + "/domestic.html");
+})
+app.get("/transfer", function(req,res){
+    res.sendFile(__dirname + "/transfer.html");
+})
+app.get("/loans", function(req,res){
+    res.sendFile(__dirname + "/loans.html");
+})
+app.get("/personal", function(req,res){
+    res.sendFile(__dirname + "/personal.html");
+})
+app.get("/car", function(req,res){
+    res.sendFile(__dirname + "/car.html");
+})
+app.get("/viewloan", function(req,res){
+    res.sendFile(__dirname + "/viewloan.html");
+})
+app.get("/report", function(req,res){
+    res.sendFile(__dirname + "/report.html");
+})
 
 $ = function(id) {
     return document.getElementById(id);

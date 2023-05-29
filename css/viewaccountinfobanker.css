@@ -7,6 +7,7 @@
 html, body{
 	height: 100%;
 	width:100%;
+    background-color: #e8eef1;
 }
 
 .navbar{
@@ -36,23 +37,47 @@ html, body{
 
 #home{
 	background-color:#e8eef1 ;
+    text-align: center;
 	display: table;
 	height:100%;
 	position: relative;
-	width: 100%;
+	width:100%;
 	background-size: cover;
 }
 
 .landing-text{
+    position: relative;
 
-
-	display: table-cell;
+	display: table;
 	text-align: center;
-	vertical-align:-webkit-baseline-middle;
+    vertical-align:middle;
+	
 }
 
+
+
+
+.btn{
+    padding: 10px 60px;
+    background: #fff;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    font-size: 22px;
+    font-weight: 500;
+    border-radius: 30px;
+    text-align:center;
+}
+
+
+.form-control {
+    font-size: 16px;
+}
+
+
 .landing-text h1{
-	font-size: 500%;
+    text-align:center;
+	font-size: 300%;
 	font-weight: 100%;
 	color:#1e3d58
 }
