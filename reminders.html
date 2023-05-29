@@ -249,10 +249,10 @@
               
               </div>
               <br>
-              <button type="delete-reminder" class="btn" onclick="openPopup()">Delete a Reminder</button>
-              <div class="popup" id="popup">
+              <button type="delete-reminder" class="btn" onclick="openPopup2()">Delete a Reminder</button>
+              <div class="popup" id="popup2">
                <h2>Reminder deleted successfully</h2>
-               <button type="button" onclick="closePopup()">Close</button> 
+               <button type="button" onclick="closePopup2()">Close</button> 
              </div> 
           </div>
         </div>
@@ -263,12 +263,20 @@
         <br>
         <script>
         let popup = document.getElementById("popup");
+        let popup2 = document.getElementById("popup2");
         function openPopup(){
             event.preventDefault();
             popup.classList.add("open-popup");
         }
         function closePopup(){
             popup.classList.remove("open-popup");
+        }
+        function openPopup2(){
+            event.preventDefault();
+            popup2.classList.add("open-popup");
+        }
+        function closePopup2(){
+            popup2.classList.remove("open-popup");
         }
         </script>
     </div>

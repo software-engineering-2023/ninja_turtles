@@ -48,7 +48,7 @@ footer {
 #rectangle {
     width: 95%;
     height: 200px;
-    background-color: rgb(166, 166, 214);
+    background-color: rgb(119, 156, 250);
     transition: box-shadow 0.3s ease;
     border-radius: 15px;
     cursor: pointer;

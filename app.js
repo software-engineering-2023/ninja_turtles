@@ -83,6 +83,9 @@ app.post("/login", function(req,res){
 
 })
 
+app.get("/applyForCredit", function(req,res){
+    res.sendFile(__dirname + "/applyForCredit.html");
+})
 
 
 app.get("/about", function(req,res){
@@ -106,6 +109,33 @@ app.get("/registerhasaccount", function(req,res){
 app.get("/registernoaccount", function(req,res){
     res.sendFile(__dirname + "/registernoaccount.html");
 })
+app.get("/technicalissuesadmin", function(req,res){
+    res.sendFile(__dirname + "/technicalissuesadmin.html");
+})
+app.get("/accountapplication", function(req,res){
+    res.sendFile(__dirname + "/accountapplication.html");
+})
+app.get("/dummyaccount", function(req,res){
+    res.sendFile(__dirname + "/dummyaccount.html");
+})
+
+app.get("/cardapplication", function(req,res){
+    res.sendFile(__dirname + "/cardapplication.html");
+})
+app.get("/loanappbanker", function(req,res){
+    res.sendFile(__dirname + "/loanappbanker.html");
+})
+app.get("/reportsbanker", function(req,res){
+    res.sendFile(__dirname + "/reportsbanker.html");
+})
+app.get("/announcement", function(req,res){
+    res.sendFile(__dirname + "/announcement.html");
+})
+app.get("/viewaccountinfobanker", function(req,res){
+    res.sendFile(__dirname + "/viewaccountinfobanker.html");
+})
+
+
 
 app.get("/otp", function(req,res){
     res.sendFile(__dirname + "/otp.html");
